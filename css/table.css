@@ -35,7 +35,7 @@ td{
 }
 
 td:hover{
-    opacity: 0.9;
+    opacity: 0.6;
 
 
 }
@@ -48,6 +48,7 @@ td:active
 
 table{
     cursor: pointer;
+    border-collapse: collapse;
 }
 
 .btn{
@@ -74,3 +75,19 @@ td:hover >.btn{
     opacity: 1;
     transition: 1s;
 }
+
+dialog{
+    border:2px solid #000000;
+    border-radius: 10px;
+
+}
+
+
+.dialogexist{
+    background-color: black;
+    opacity: 0.5 ;
+    transition:2s ;
+}
+
+
+
