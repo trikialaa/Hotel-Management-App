@@ -1,57 +1,58 @@
-
-
 var btn1 = document.createElement('input');
+var body = document.querySelector("body");
 btn1.type = "button";
 btn1.className = "btn";
 btn1.value = "Reserver";
-btn1.onclick=function () {
-    btn1.parentElement.className="orange" ;
-    btn1.parentElement.removeChild(btn1) ;
+btn1.onclick = function () {
+    var dialogres = document.getElementById("reservation_dialogue");
+    dialogres.showModal();
+   body.classList.toggle("dialogexist");
+
 };
+
 
 var btn2 = document.createElement('input');
 btn2.type = "button";
 btn2.className = "btn";
 btn2.value = "check-in";
-btn2.onclick=function () {
-    btn2.parentElement.className="rouge" ;
-    btn2.parentElement.removeChild(btn2) ;
-    btn2.parentElement.removeChild(btn1) ;
-
+btn2.onclick = function () {
+    var dialogcheckin = document.getElementById("checkin_dialogue");
+    body.classList.toggle("dialogexist");
+    dialogcheckin.showModal();
 };
 
 var btn3 = document.createElement('input');
 btn3.type = "button";
 btn3.className = "btn";
 btn3.value = "check-out";
-btn3.onclick=function () {
-    btn3.parentElement.className="vert" ;
-    btn3.parentElement.removeChild(btn3) ;
+btn3.onclick = function () {
+    btn3.parentElement.className = "vert";
+    body.classList.toggle("dialogexist");
+    btn3.parentElement.removeChild(btn3);
 };
 
 const cells = document.querySelectorAll("td");
 
 for (var j = 0; j < cells.length; j++) {
-    cells[j].className="vert" ;
+    cells[j].className = "vert";
 }
 
-for (var  i = 0; i < cells.length; i++) {
-/*
-    cells[i].addEventListener("click", function() {
-        this.className= this.className === "vert" ? "orange" : "vert";
-        //getval(this);
-    });
-    */
-    cells[i].addEventListener("mouseover",function () {
-        if (this.className==="vert" )
-        {
-            this.appendChild(btn1) ;
-            this.appendChild(btn2) ;
+for (var i = 0; i < cells.length; i++) {
+    /*
+        cells[i].addEventListener("click", function() {
+            this.className= this.className === "vert" ? "orange" : "vert";
+            //getval(this);
+        });
+        */
+    cells[i].addEventListener("mouseover", function () {
+        if (this.className === "vert") {
+            this.appendChild(btn1);
+            this.appendChild(btn2);
         }
         else {
             if (this.className === "rouge") {
 
-               this.appendChild(btn3);
+                this.appendChild(btn3);
             }
             else {
 
@@ -60,17 +61,54 @@ for (var  i = 0; i < cells.length; i++) {
         }
 
     })
-    cells[i].addEventListener("mouseleave",function () {
-        setTimeout(this.removeChild(btn1) ,2000);
-        setTimeout(this.removeChild(btn2) ,2000);
-        setTimeout(this.removeChild(btn3) ,2000);
+    cells[i].addEventListener("mouseleave", function () {
+       btn1.visibility="hidden" ;
+        btn2.visibility="hidden" ;
+        btn3.visibility="hidden" ;
 
     })
 
 
 }
 
+function annulerreservation() {
+    var dialogres = document.getElementById("reservation_dialogue");
 
+    dialogres.close();
+    body.classList.toggle("dialogexist");
+
+
+}
+
+function annulercheckin() {
+    var dialogcheckin = document.getElementById("checkin_dialogue");
+    dialogcheckin.close();
+    body.classList.toggle("dialogexist");
+
+}
+
+var resform = document.getElementById("resform") ;
+resform.onsubmit=function () {
+    btn1.parentElement.className = "orange";
+    btn1.parentElement.removeChild(btn1);
+    var dialogres = document.getElementById("reservation_dialogue");
+    body.classList.toggle("dialogexist");
+
+    dialogres.close();
+    return false ;
+}
+
+var checkinform = document.getElementById("checkinform") ;
+checkinform.onsubmit=function () {
+    btn2.parentElement.className = "rouge";
+   // btn2.parentElement.removeChild(btn1);
+    btn2.parentElement.removeChild(btn2);
+    var dialogcheckin = document.getElementById("checkin_dialogue");
+    dialogcheckin.close();
+    body.classList.toggle("dialogexist");
+
+    return false ;
+}
 
 
 /*
