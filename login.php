@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="./css/navbar_style.css">
 </head>
 <body>
-<!-- NAV BAR -->
-<div id="navbar">
-    <a href="#">Accueil</a>
-    <a href="#">Réservation</a>
-    <a href="#">Check-in</a>
-    <a href="#">Consommation</a>
-    <a href="#">Factures</a>
-    <a href="#">Check-out</a>
-    <script src="./js/navbar_script.js"></script>
-</div>
-<!-- BODY -->
 <form action="action_page.php" method="POST">
     <div class="img_container">
         <img src="img/img_avatar.png" alt="Avatar" class="avatar">
