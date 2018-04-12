@@ -2,6 +2,9 @@
     overflow: hidden;
     height: 60px;
     background-color: #333;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 #navbar a {
@@ -10,25 +13,14 @@
     color: #f2f2f2;
     text-align: center;
     line-height: 30px;
-    padding: 14px;
     text-decoration: none;
     border-right: 1px solid #bbb;
 }
 
+#navbar .link {
+    padding: 14px;
+}
+
 #navbar :hover {
     background-color: gold;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-.sticky + .content {
-    padding-top: 60px;
 }

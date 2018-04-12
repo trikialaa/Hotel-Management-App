@@ -7,14 +7,12 @@
 <body>
 
 <header>
-    <img src=""><!--logo du hotel-->
-    <p>ceci est le nom du hotel</p>
 </header>
 <br><br><br><br>
 <div>
-    <div>
-        <p>welcome foulen </p>
-    </div>
+    <?php
+        include("navbar.php");
+    ?>
 
 
     <button id="ajouterconso" onclick="ouvrirconso()">ajouter consommation</button>
@@ -53,12 +51,12 @@
     </div>
 
     <br><br><br><br>
-    <footer>
+    <div>
 
         <p align="left">adresse : ceci est une adresse</p>
         <p align="right">Phone : ceci est un numéro</p>
 
-    </footer>
+    </div>
 
 </div>
 

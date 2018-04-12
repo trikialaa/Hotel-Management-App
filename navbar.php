@@ -1,9 +1,10 @@
 <div id="navbar">
-    <a href="#">Accueil</a>
-    <a href="#">Réservation</a>
-    <a href="#">Check-in</a>
-    <a href="#">Consommation</a>
-    <a href="#">Factures</a>
-    <a href="#">Check-out</a>
-    <script src="./js/navbar_script.js"></script>
+    <a class="logo" href="#"><img src="./img/logo_white.png" height="60px"></a>
+    <a class="link" href="#">Accueil</a>
+    <a class="link" href="#">Réservation</a>
+    <a class="link" href="#">Check-in</a>
+    <a class="link" href="#">Consommation</a>
+    <a class="link" href="#">Factures</a>
+    <a class="link" href="#">Check-out</a>
+    <link rel="stylesheet" type="text/css" href="./css/navbar_style.css" media="screen" />
 </div>
