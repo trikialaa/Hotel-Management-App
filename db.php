@@ -1,16 +1,16 @@
 <?php
 
-/* Database connection settings */
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'accounts';
+$db = 'dbhotel';
 
-// Create connection
-$conn = new mysqli($host,$user,$pass,$db) ;
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$db", $use, $pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //Connexion établie avec succès
 }
-echo "Connected to database\n";
+catch(PDOException $e)
+{
+    //Erreur de connexion
+}
