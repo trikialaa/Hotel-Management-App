@@ -1,15 +1,13 @@
 #navbar {
     overflow: hidden;
     height: 60px;
-    background-color: #333;
-    position: fixed;
-    top: 0px;
+    background-color: gold;
     width: 100%;
 }
 
 #navbar a {
     float: left;
-    display: block;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     line-height: 30px;
@@ -21,6 +19,17 @@
     padding: 14px;
 }
 
+#navbar .user {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border-left: 1px solid #bbb;
+    padding: 14px;
+}
+
 #navbar :hover {
-    background-color: gold;
+    background-color: black;
 }
