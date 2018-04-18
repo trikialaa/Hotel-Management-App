@@ -7,7 +7,7 @@
  */
 
         require 'BDRequestManager.php';
-        require '/../dataClass/Client.php';
+
 
         function showClientInRow($bdrm){
 

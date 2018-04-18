@@ -6,8 +6,8 @@
  * Time: 13:38
  */
 
-    require '/../dataClass/Client.php';
-    require '/../dataClass/Chambre.php';
+    require __DIR__ .'/../dataClass/Client.php';
+    require __DIR__ .'/../dataClass/Chambre.php';
 
 
     class BDRequestManager
