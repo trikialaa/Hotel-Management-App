@@ -8,13 +8,14 @@
 
 class Client
 {
-    public $id;
-    public $nom;
-    public $prenom;
-    public $ntel;
-    public $email;
-    public $idtype;
-    public $idnumber;
+    public $CLIENTID;
+    public $Nom;
+    public $Prenom;
+    public $NTel;
+    public $EMail;
+    public $IDType;
+    public $IDNumber;
+
 
     private function __construct()
     {
@@ -22,7 +23,7 @@ class Client
 
     public function showInRow(){
         // THIS METHOD IMPLIES ECHOING <table> FIRST !!
-        echo "<tr><td>".$this->id."<td>".$this->nom."<td>".$this->prenom."<td>".$this->ntel."<td>".$this->email."<td>".$this->idtype."<td>".$this->idnumber."</tr>";
+        echo "<tr><td>".$this->CLIENTID."</td><td>".$this->Nom."</td><td>".$this->Prenom."</td><td>".$this->NTel."</td><td>".$this->EMail."</td><td>".$this->IDType."</td><td>".$this->IDNumber."</td></tr>";
     }
     public static function startTable(){
         echo "<table>";
