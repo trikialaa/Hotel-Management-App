@@ -105,6 +105,14 @@
         <input type="text" id="country" class="floatLabel" name="country">
         <label for="country">Pays</label>
       </div>
+    <p align="left">
+        <b> <i class="material-icons">home</i> &nbsp;&nbsp; Choisir une chambre : </b>
+        <br>
+        <br>
+        <div class="controls">
+    <a href="Singlerooms.php"><p class="floatLabel" size="15">Map chambres</p> </a>
+    </div>
+
   </div>
 
           <br>
