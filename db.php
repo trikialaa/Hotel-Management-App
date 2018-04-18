@@ -1,16 +1,20 @@
 <?php
 
-/* Database connection settings */
 $host = 'localhost';
 $user = 'root';
 $pass = '';
+<<<<<<< HEAD
 $db = 'hotel';
+=======
+$db = 'dbhotel';
+>>>>>>> 09d62c89a4aff68a44b70496a0e9d8618f456382
 
-// Create connection
-$conn = new mysqli($host,$user,$pass,$db) ;
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$db", $use, $pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //Connexion établie avec succès
 }
-echo "Connected to database\n";
+catch(PDOException $e)
+{
+    //Erreur de connexion
+}

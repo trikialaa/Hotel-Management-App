@@ -5,10 +5,6 @@
     <title></title>
 </head>
 <body>
-
-<header>
-</header>
-<br><br><br><br>
 <div>
     <?php
         include("navbar.php");
@@ -38,11 +34,11 @@
 
     <div>
         <h2>choisir chambre</h2>
-        <img src="../../../Desktop/3da122b332ca42a77da7e8e316f053e5.jpg"  class="chambre"/>
-        <img src="../../../Desktop/Double-room-003.jpg"  class="chambre"/>
+        <img width="300px" src="./img/room1.png"  class="chambre"/>
+        <img width="300px" src="./img/room2.png"  class="chambre"/>
         <br>
-        <img src="../../../Desktop/TripleRoom.jpg" class="chambre"/>
-        <img src="../../../Desktop/Bungalow-Hotel-Simple.jpg" class="chambre"/>
+        <img width="300px" src="./img/room3.png" class="chambre"/>
+        <img width="300px" src="./img/room4.png" class="chambre"/>
 
     </div>
 
