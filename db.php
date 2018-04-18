@@ -4,7 +4,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'accounts';
+$db = 'hotel';
 
 // Create connection
 $conn = new mysqli($host,$user,$pass,$db) ;
