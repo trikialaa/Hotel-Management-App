@@ -8,13 +8,13 @@
 
 class ElementFacture
 {
-    public $elementid;
-    public $name;
-    public $price;
+    public $ELEMENTID;
+    public $NAME;
+    public $PRICE;
 
     public function showInRow(){
         // THIS METHOD IMPLIES ECHOING <table> FIRST !!
-        echo "<tr><td>".$this->elementid."<td>".$this->name."<td>".$this->price."</tr>";
+        echo "<tr><td>".$this->ELEMENTID."</td><td>".$this->NAME."</td><td>".$this->PRICE."</td></tr>";
     }
     public static function startTable(){
         echo "<table>";

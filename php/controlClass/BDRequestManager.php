@@ -67,6 +67,21 @@ class BDRequestManager
 
     }
 
+    public function getAllClients(){
+        $sqlreq = "SELECT * FROM CLIENT";
+
+        try{
+            $req = self::$_bdd->prepare($sqlreq);
+            $req->execute();
+            return $req->fetchAll(PDO::FETCH_CLASS,"Client");
+        } catch (PDOException $e) {
+            die("Error" . $e->getMessage());
+            return null;
+        }
+    }
+
+
+    /*
     public function verifyAgentCredentials($login, $password)
     {
         try {
@@ -174,6 +189,6 @@ class BDRequestManager
 
     public function getElementFactureFromRoom($room){
 
-    }
+    }*/
 
 }
