@@ -19,8 +19,7 @@
             Client::endTable();
         }
 
-
-        echo "helloFromBDHANDLER<br>";
+        echo "helloFromBDInterface<br>";
 
         $bdrm = BDRequestManager::getInstance();
 
