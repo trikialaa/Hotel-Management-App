@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="accounts@localhost" uuid="3a70295b-6cd9-4a9e-b852-e03ca9e3ea18">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    <data-source name="bdhotel@localhost" uuid="77ad0cb6-3c97-47f7-b461-53459aff8b5f">
+      <database-info product="MySQL" version="10.1.31-MariaDB" jdbc-version="4.2" driver-name="MariaDB connector/J" driver-version="2.2.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:bdhotel</introspection-schemas>
     </data-source>
   </component>
 </project>
