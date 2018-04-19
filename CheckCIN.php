@@ -12,10 +12,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST") {
             die(var_export($db->errorinfo(), true));
         if( $rep->rowCount()) {
             echo 'Cin existant'; }
-        else
-        {
 
-        }
 
     }
 
