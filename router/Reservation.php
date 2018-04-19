@@ -1,22 +1,3 @@
-<?php
-if (isset($_POST['submit'])) {
-    try{
-        $db = new PDO('mysql:host=localhost;dbname=basehotel','root','');
-        $db->query("use basehotel");
-        $req=$db->prepare('INSERT INTO reservation(CIN, Numerotel, Date_arrive, Date_depart, TypeChambre) VALUES (?,?,?,?,?)') ;
-        $req->execute(array($_POST['cin'],$_POST['phone'],$_POST['arrive'],$_POST['depart'],$_POST['type']));
-
-    }
-    catch (PDOException $e)
-    {
-        print"Erreur : ".$e->getMessage();
-        die();
-    }
-
-
-}
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +6,7 @@ if (isset($_POST['submit'])) {
 
 </head>
 <body>
-<form method="POST" action="" >
+<form method="POST" action="../public/php/Reservation.php" >
     <div class="form-group">
         <h2 class="heading">Effectuer réservation</h2>
 
