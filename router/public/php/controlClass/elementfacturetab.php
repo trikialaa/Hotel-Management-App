@@ -14,3 +14,11 @@
     $elementlist = $bdrm->getElementFactureByType("mekla");
 
     ElementFacture::printArray($elementlist);
+
+    echo "<br><br>";
+
+    $elementlist = $bdrm->getAllEFTypes();
+
+    foreach ($elementlist as $e){
+        echo $e->TYPE."<br>";
+    }

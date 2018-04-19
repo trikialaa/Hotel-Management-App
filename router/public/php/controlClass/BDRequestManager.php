@@ -177,6 +177,20 @@
             }
         }
 
+        public function getAllEFTypes(){
+            $sqlreq = "SELECT DISTINCT el.TYPE FROM elementfacture el";
+
+            try{
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute();
+                return $req->fetchAll(PDO::FETCH_OBJ);
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return null;
+            }
+
+        }
+
 
 
         /*
