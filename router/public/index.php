@@ -14,7 +14,7 @@ switch ($request_uri[0]) {
     break;
 
     case '/reservation':
-        require '../views/FormulaireReservation.php';
+        require '../views/Reservation.php';
         break;
 
     case '/singlerooms':
