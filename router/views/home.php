@@ -12,26 +12,6 @@
     ?>
 
 
-    <button id="ajouterconso" onclick="ouvrirconso()">ajouter consommation</button>
-
-    <dialog id="consodialogue"><!--boite de dialogue consommation-->
-        <h6>consommation</h6>
-        <form action="" id="formconsommation" method="dialog"><!--formulaire consommation-->
-            <input placeholder="n° chambre" type="text" id="numchambre">
-            <br>
-            <select id="typeconsommation">
-                <option>mekla fel bit</option>
-                <option>café/bar</option>
-                <option>ironing/washing clothes</option>
-            </select>
-            <br>
-            <input placeholder="tarif">
-            <br>
-            <button id="cancel" type="reset" onclick="fermerconso()" >cancel</button>
-            <br>
-            <button id="confirm" type="submit" >confirmer</button>
-        </form>
-    </dialog>
 
     <div>
         <h2>choisir chambre</h2>
@@ -57,6 +37,5 @@
 
 </div>
 
-<script src="js\ajouterconso.js"></script>
 </body>
 </html>
