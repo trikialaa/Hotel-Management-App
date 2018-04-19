@@ -1,0 +1,22 @@
+body
+{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.chambre
+{
+    width: 35%;
+    height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#consodialogue
+{
+    width: 500px;
+    height: 500px;
+}

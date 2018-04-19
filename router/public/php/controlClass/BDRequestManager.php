@@ -8,6 +8,7 @@
 
     require __DIR__ .'/../dataClass/Client.php';
     require __DIR__ .'/../dataClass/Chambre.php';
+    require __DIR__ .'/../dataClass/Agent.php';
 
 
     class BDRequestManager
@@ -80,6 +81,66 @@
                 return null;
             }
         }
+
+        public function checkAdmin($login,$mdp){
+            $sqlreq = "SELECT * FROM admin where admin.LOGIN = ? and admin.PASSWORD = ?";
+            try{
+
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array($login,$mdp));
+                $abc = $req->fetch(PDO::FETCH_OBJ);
+
+                if(is_bool($abc))
+                    return false;
+                return true;
+
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return false;
+            }
+        }
+
+        public function checkAgentLogin($login){
+            $sqlreq = "SELECT * FROM agent where agent.Login_Agent = ?";
+            try{
+
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array($login));
+                $abc = $req->fetch(PDO::FETCH_OBJ);
+
+                if(is_bool($abc))
+                    return false;
+                else{
+                    return true;
+                }
+
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return true;
+            }
+        }
+
+        public function checkAgent($login,$mdp){
+            $sqlreq = "SELECT * FROM agent where agent.Login_Agent = ? and agent.Password_Agent = ?";
+            try{
+
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array($login,$mdp));
+                $abc = $req->fetch(PDO::FETCH_OBJ);
+
+                if(is_bool($abc))
+                    return null;
+                else{
+                    return new Agent($abc->AGENTID,$abc->LastName,$abc->FirstName,$abc->Address,$abc->NumTel,
+                        $abc->Login_Agent,$abc->Password_Agent);
+                }
+
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return null;
+            }
+        }
+
 
 
         /*

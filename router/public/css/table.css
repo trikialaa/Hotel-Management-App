@@ -1,0 +1,93 @@
+.vert{
+    cursor: context-menu;
+    background: -moz-linear-gradient(top, #67ff5e, #00e925);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#67ff5e), to(#00e925));
+   text-align: center;
+    padding: 5px;
+}
+.orange{
+    cursor: context-menu;
+    background: -moz-linear-gradient(top, #ff7700, #de6a00);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff7700), to(#de6a00));
+    text-align:center;
+    padding: 5px;
+}
+
+.rouge{
+    cursor: context-menu;
+    background: -moz-linear-gradient(top, #ff0008, #a40004);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff0008), to(#a40004));
+    text-align:center;
+    padding: 5px;
+}
+
+td{
+    height: 100px ;
+    display: inline-grid;
+    max-height: 100px;
+    max-width: 100px;
+    width: 100px ;
+    color: white;
+    font-size: xx-large;
+    transition: 2s;
+
+
+}
+
+td:hover{
+    opacity: 0.6;
+
+
+}
+
+
+td:active
+{
+    opacity: 0.8;
+}
+
+table{
+    cursor: pointer;
+    border-collapse: collapse;
+}
+
+.btn{
+    visibility: hidden;
+    display: inline-block;
+    opacity: 0;
+    transition: 1s;
+    margin: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    background-color: #212221;
+    color: white;
+
+
+    border: none;
+
+
+    border-radius:4px ;
+
+}
+td:hover >.btn{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+dialog{
+    border:2px solid #000000;
+    border-radius: 10px;
+
+}
+
+
+.dialogexist{
+    background-color: black;
+    opacity: 0.5 ;
+    transition:2s ;
+}
+
+
+

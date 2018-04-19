@@ -23,5 +23,5 @@
 
         $bdrm = BDRequestManager::getInstance();
 
-        showClientInRow($bdrm);
+
 
