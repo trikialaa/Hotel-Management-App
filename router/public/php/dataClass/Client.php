@@ -32,10 +32,12 @@ class Client
         echo "</table>";
     }
 
-
-
-
-
-
+    public static function printArray($a){
+        self::startTable();
+        foreach ($a as $v){
+            $v->showInRow();
+        }
+        self::endTable();
+    }
 
 }

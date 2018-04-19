@@ -20,11 +20,17 @@ switch ($request_uri[0]) {
     case '/singlerooms':
         require '../views/Singlerooms.php';
         break;
+    case '/elfac':
+        require 'php/controlClass/elementfacturetab.php';
+        break;
     case '/checkin':
         require '../views/CheckInForm.php';
         break;
     case '/checkcin':
         require '../views/CheckCIN.php';
+        break;
+    case '/consomation':
+        require '../views/consommation.php';
         break;
 
     default:

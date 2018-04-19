@@ -25,4 +25,5 @@ class Agent
         $this->Login_Agent = $log;
         $this->Password_Agent = $pass;
     }
+
 }

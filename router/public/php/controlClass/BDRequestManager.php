@@ -9,6 +9,7 @@
     require __DIR__ .'/../dataClass/Client.php';
     require __DIR__ .'/../dataClass/Chambre.php';
     require __DIR__ .'/../dataClass/Agent.php';
+    require __DIR__ .'/../dataClass/ElementFacture.php';
 
 
     class BDRequestManager
@@ -157,6 +158,19 @@
                         $abc->Login_Agent,$abc->Password_Agent);
                 }
 
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return null;
+            }
+        }
+
+        public function getElementFactureByType($type){
+            $sqlreq = "SELECT * FROM elementfacture el where el.TYPE = ? ";
+
+            try{
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array($type));
+                return $req->fetchAll(PDO::FETCH_CLASS,"ElementFacture");
             } catch (PDOException $e) {
                 die("Error" . $e->getMessage());
                 return null;
