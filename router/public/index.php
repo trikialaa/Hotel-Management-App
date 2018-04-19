@@ -23,6 +23,9 @@ switch ($request_uri[0]) {
     case '/checkin':
         require '../views/CheckInForm.php';
         break;
+    case '/checkcin':
+        require '../views/CheckCIN.php';
+        break;
 
     default:
         header('HTTP/1.0 404 Not Found');

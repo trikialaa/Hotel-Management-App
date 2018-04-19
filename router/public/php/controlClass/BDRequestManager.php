@@ -116,7 +116,29 @@
 
             } catch (PDOException $e) {
                 die("Error" . $e->getMessage());
-                return true;
+                return false;
+            }
+        }
+
+        public function checkClientCIN($cin){
+            $sqlreq = "SELECT * FROM client cl inner join sejourclient s on cl.CLIENTID = s.CLIENTID 
+                                            inner join sejour s2 on s.SEJOURID = s2.SEJOURID 
+                                            where s2.RESERVE =1  and cl.IDNumber = ? and cl.IDType = ?";
+            try{
+
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array($cin,"CIN"));
+                $abc = $req->fetch(PDO::FETCH_OBJ);
+
+                if(is_bool($abc))
+                    return false;
+                else{
+                    return true;
+                }
+
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return false;
             }
         }
 

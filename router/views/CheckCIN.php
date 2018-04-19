@@ -1,25 +1,3 @@
-<?php
-if( $_SERVER["REQUEST_METHOD"] == "POST") {
-    // connexion à la bd
-    $db=new PDO('mysql:host=localhost;dbname=basehotel','root','');
-
-    $id = $_POST['cin'];
-
-    if (isset($_POST['submit'])) {
-        $sql="SELECT * FROM reservation WHERE (CIN='".$id."') ";
-        $rep = $db->query($sql);
-        if( ! $rep )
-            die(var_export($db->errorinfo(), true));
-        if( $rep->rowCount()) {
-            echo 'Cin existant'; }
-
-
-    }
-
-
-
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +6,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="css_reserve.css">
 </head>
 <body>
-<form method="POST" action="" >
+<form method="POST" action="\php\controlClass\cin.php" >
     <div class="form-group">
         <h2 class="heading">Vérifier réservation</h2>
 
