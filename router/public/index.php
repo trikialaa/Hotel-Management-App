@@ -5,6 +5,10 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 // Route it up!
 switch ($request_uri[0]) {
     // Home page
+    case '/':
+        require '../views/index.php';
+        break;
+
     case '/home':
         require '../views/home.php';
         break;
