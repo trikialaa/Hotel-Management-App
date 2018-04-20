@@ -39,7 +39,7 @@ for (j in cells)
 }
 for (i in rooms_js) {
 
-    cells[rooms_js[i]["CHAMBREID"]].className = "rouge";
+    cells[rooms_js[i]["CHAMBREID"]-1].className = "rouge";
 }
 function refresh_table() {
     console.log(document.getElementById("date_in").value)
