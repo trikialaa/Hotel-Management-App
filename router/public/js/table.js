@@ -27,16 +27,24 @@ btn3.className = "btn";
 btn3.value = "check-out";
 btn3.onclick = function () {
     btn3.parentElement.className = "vert";
-    body.classList.toggle("dialogexist");
+   // body.classList.toggle("dialogexist");
     btn3.parentElement.removeChild(btn3);
 };
 
-const cells = document.querySelectorAll("td");
+var cells = document.querySelectorAll("td");
 
-for (var j = 0; j < cells.length; j++) {
-    cells[j].className = "vert";
+for (j in cells)
+{
+    cells[j].className="vert" ;
 }
+for (i in rooms_js) {
 
+    cells[rooms_js[i]["CHAMBREID"]-1].className = "rouge";
+}
+function refresh_table() {
+    console.log(document.getElementById("date_in").value)
+
+}
 for (var i = 0; i < cells.length; i++) {
     /*
         cells[i].addEventListener("click", function() {

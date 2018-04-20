@@ -303,4 +303,21 @@
 
         }*/
 
+        public function getOccupiedRooms()
+        {
+            $sqlreq = "SELECT CHAMBRE.CHAMBREID FROM CHAMBRE INNER JOIN SEJOUR SJ ON SJ.CHAMBREID = CHAMBRE.CHAMBREID
+                        where ((sj.CheckIn <=:minDate AND sj.CheckOut>= :minDate )
+                        or 	(sj.CheckIn<= :maxDate AND sj.CheckOut>= :maxDate) 
+                        or (sj.CheckIn>= :minDate AND sj.CheckOut<= :maxDate))";
+
+            try{
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array('minDate'=>$_GET["date_in"],
+                                    'maxDate'=>$_GET["date_out"]));
+                return $req->fetchAll(PDO::FETCH_OBJ);
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+
+            }
+        }
     }

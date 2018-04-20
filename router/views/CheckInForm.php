@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="css/form_check_in.css">
+    <link rel="stylesheet" href="..\..\router\public\css\form_check_in.css">
 
 
 </head>
@@ -66,7 +66,7 @@
     <br>
     <br>
 
-    <h2 class="heading">Les details du chec-in</h2>
+    <h2 class="heading">Les details du check-in</h2>
     <div class="controls">
         <input type="text" id="name" class="floatLabel" name="name">
         <label for="name">Nom</label>
@@ -131,7 +131,7 @@
 
 
 
-<script  src="js/form_check_in.js"></script>
+<script  src="..\..\js\form_check_in.js"></script>
 
 
 

@@ -1,3 +1,11 @@
+<?php
+require '../public/php/controlClass/BDRequestManager.php';
+$bdrm = BDRequestManager::getInstance();
+if (isset($_GET["refresh"]) && isset($_GET["date_in"]) && isset ($_GET["date_out"]) ) {
+    $rooms = $bdrm->getOccupiedRooms();
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -5,10 +13,27 @@
     <meta charset="UTF-8">
     <title>single rooms</title>
     <link rel="stylesheet" type="text/css" href="css/table.css">
+    <script>
+        var rooms_js=<?php echo json_encode($rooms); ?>;
+    </script>
 </head>
 <body>
 
 <div id="parentpage">
+
+    <form method="get"> <div id="dates">
+        <input placeholder="Check-in date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_in" name ="date_in">
+
+        <input placeholder="Check-out date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_out" name="date_out">
+
+        <input type="submit" onclick='' value="Rafraichir" name ="refresh"/>
+
+
+          </div>
+    </form>
+
+
+
     <table align="center" id="tblMain" border="1">
         <tr>
             <td>1</td>
