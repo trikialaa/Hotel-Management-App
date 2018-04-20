@@ -306,9 +306,9 @@
         public function getOccupiedRooms()
         {
             $sqlreq = "SELECT CHAMBRE.CHAMBREID FROM CHAMBRE INNER JOIN SEJOUR SJ ON SJ.CHAMBREID = CHAMBRE.CHAMBREID
-                        where ((sj.CheckIn < :minDate AND sj.CheckOut> :minDate )
-                        or 	(sj.CheckIn< :maxDate AND sj.CheckOut> :maxDate) 
-                        or (sj.CheckIn> :minDate AND sj.CheckOut< :maxDate))";
+                        where ((sj.CheckIn <=:minDate AND sj.CheckOut>= :minDate )
+                        or 	(sj.CheckIn<= :maxDate AND sj.CheckOut>= :maxDate) 
+                        or (sj.CheckIn>= :minDate AND sj.CheckOut<= :maxDate))";
 
             try{
                 $req = self::$_bdd->prepare($sqlreq);
