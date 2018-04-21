@@ -24,9 +24,4 @@
         if(isset($nom) and isset($cin) and isset($room))
             echo $nom." ".$cin." ".$room;
 
-
-
-
-
-
     }
