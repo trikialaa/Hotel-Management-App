@@ -10,12 +10,10 @@
 
     $bdrm = BDRequestManager::getInstance();
 
-    $response = $bdrm->checkClientCIN($_POST['cin']);
+    $response = $bdrm->isClientInBd("CIN",$_POST['cin']);
 
-    if ($response)  {
-
+    if ($response >=0 )  {
         echo "AVAILABLE" ;
-
     }else{
         echo "NOT AVAILBALBE";
     }

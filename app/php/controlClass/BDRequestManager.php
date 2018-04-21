@@ -10,10 +10,12 @@
     require __DIR__ . '/../dataClass/Chambre.php';
     require __DIR__ . '/../dataClass/Agent.php';
     require __DIR__ . '/../dataClass/ElementFacture.php';
+    require __DIR__ . '/../dataClass/Sejour.php';
 
 
     class BDRequestManager
     {
+        //some static attribute describing the database
         private static $_dbname = "BDHOTEL";
         private static $_user = "root";
         private static $_pwd = "";
@@ -21,6 +23,7 @@
         private static $_bdd = null;
         private static $_bdrm = null;
 
+        //private constructor to make one object
         private function __construct()
         {
             try {
@@ -34,6 +37,7 @@
             }
         }
 
+        //it controls the construction of this class object
         public static function getInstance()
         {
 
@@ -44,6 +48,7 @@
                 return self::$_bdrm;
         }
 
+        // add client from attributes to database - returns his database id
         public function addClientToBd($nom, $prenom, $ntel, $email, $idtype, $idnumber)
         {
             try {
@@ -70,6 +75,32 @@
 
         }
 
+        // add client from attributes to database  fro reservation - returns his database id
+        public function addClientToBdForReservation($nom, $prenom,$idtype, $idnumber)
+        {
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("insert into bdhotel.client (`nom`, `prenom`, `NTel`, `email`, `idtype`, `idnumber`) 
+                                                           VALUES (:val1,:val2,:val5,:val6)");
+                    $req->execute(array(
+                        'val1' => $nom,
+                        'val2' => $prenom,
+                        'val5' => $idtype,
+                        'val6' => $idnumber,
+                    ));
+                    return self::$_bdd->lastInsertId();
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return -1;
+            }
+
+
+        }
+
+        //return array of all clients in database
         public function getAllClients(){
             $sqlreq = "SELECT * FROM CLIENT";
 
@@ -83,6 +114,7 @@
             }
         }
 
+        //check the admin's credentials - returns boolean
         public function checkAdmin($login,$mdp){
             $sqlreq = "SELECT * FROM admin where admin.LOGIN = ? and admin.PASSWORD = ?";
             try{
@@ -101,6 +133,7 @@
             }
         }
 
+        //return true if agent login is available - false if not
         public function checkAgentLogin($login){
             $sqlreq = "SELECT * FROM agent where agent.Login_Agent = ?";
             try{
@@ -121,28 +154,28 @@
             }
         }
 
-        public function checkClientCIN($cin){
-            $sqlreq = "SELECT * FROM client cl inner join sejourclient s on cl.CLIENTID = s.CLIENTID 
-                                            inner join sejour s2 on s.SEJOURID = s2.SEJOURID 
-                                            where s2.RESERVE =1  and cl.IDNumber = ? and cl.IDType = ?";
+        //returns the client bd id if exists - if not returns -1
+        public function isClientInBd($idtype,$idval){
+            $sqlreq = "SELECT * FROM client cl where cl.IDNumber = ? and cl.IDType = ?";
             try{
 
                 $req = self::$_bdd->prepare($sqlreq);
-                $req->execute(array($cin,"CIN"));
+                $req->execute(array($idval,$idtype));
                 $abc = $req->fetch(PDO::FETCH_OBJ);
 
                 if(is_bool($abc))
-                    return false;
+                    return -1;
                 else{
-                    return true;
+                    return $abc->CLIENTID;
                 }
 
             } catch (PDOException $e) {
                 die("Error" . $e->getMessage());
-                return false;
+                return -1;
             }
         }
 
+        //check the agent's credentials - returns agent object
         public function checkAgent($login,$mdp){
             $sqlreq = "SELECT * FROM agent where agent.Login_Agent = ? and agent.Password_Agent = ?";
             try{
@@ -164,6 +197,7 @@
             }
         }
 
+        //returns all element facture by type
         public function getElementFactureByType($type){
             $sqlreq = "SELECT * FROM elementfacture el where el.TYPE = ? ";
 
@@ -177,6 +211,7 @@
             }
         }
 
+        //returns all distinct types of element facture
         public function getAllEFTypes(){
             $sqlreq = "SELECT DISTINCT el.TYPE FROM elementfacture el";
 
@@ -191,25 +226,98 @@
 
         }
 
+        //create reservation form roomnumber and two dates - returns database sejour id at success - -1 if not
+        public function createReservation($roomnumber,$datearr,$datedepp){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("insert into sejour (`CheckIn`, `CheckOut`, `CHAMBREID`, `RESERVE`) 
+                                                           VALUES (:val1,:val2,:val5,:val6)");
+                    $req->execute(array(
+                        'val1' => $datearr,
+                        'val2' => $datedepp,
+                        'val5' => $roomnumber,
+                        'val6' => 1,
+                    ));
+                    return self::$_bdd->lastInsertId();
+                }
+                else{
+                    return -1;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
 
+                return -1;
+            }
+        }
+
+        //link client and sejour in SEJOURCLIENT table in database
+        public function addClientToSejour($idclient,$idsejour){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("insert into sejourclient (`CLIENTID`, `SEJOURID`) 
+                                                           VALUES (:val1,:val2)");
+                    $req->execute(array(
+                        'val1' => $idclient,
+                        'val2' => $idsejour
+                    ));
+                    return self::$_bdd->lastInsertId();
+                }
+                else
+                    return -1;
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return -1;
+            }
+        }
+
+        //get reservations by client id - returns array of Sejour having reservation set to 1
+        public function getReservationsForClient($idclient){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("select * from `sejour` inner join `sejourclient` s on `sejour.SEJOURID` = `s.SEJOURID` where `CLIENTID` = ? and `sejour.RESERVE` = ?");
+                    $req->execute(array($idclient,1));
+                    return $req->fetchAll(PDO::FETCH_CLASS,"Sejour");
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+                return null;
+            }
+        }
+
+        //converts reservation to normal sejour when checking in
+        public function setReservationToFalse($sejourid){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("UPDATE `sejour` set `RESERVE` = ? where  `SEJOURID` = ?");
+                    $req->execute(array(0,$sejourid));
+                    return true;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+                return false;
+            }
+        }
+
+        //update client
+
+        //remove sejour after checkout
+
+        //generate facture
+
+        //unlink sejour - client when checking out
+
+        //remove dead reservations
+
+        //add element facture to sejour when consumming
+
+        //add agent by admin
 
         /*
-        public function verifyAgentCredentials($login, $password)
-        {
-            try {
-                $req = self::$_bdd->prepare('SELECT * FROM agent WHERE Login_Agent = ? AND Password_Agent <= ?');
-
-                $req->execute(array($login, $password));
-                if ($req->rowCount() == 0)
-                    return false;
-                else
-                    return true;
-            } catch (PDOException $e) {
-                die("Error" . $e->getMessage());
-            }
-
-
-        }
 
         public function  getClientsFromRoom($roomid){
 
@@ -230,25 +338,7 @@
             }
         }
 
-        public function addSejourToBd($checkin,$checkout,$clientid){
-            try {
-                if (isset(self::$_bdrm)) {
-                    $req = self::$_bdd->prepare("insert into bdhotel.sejour (`checkin`, `checkout`, `clientID`)
-                                                           VALUES (:val1,:val2,:val3)");
-                    $req->execute(array(
-                        'val1' => $checkin,
-                        'val2' => $checkout,
-                        'val3' => $clientid
-                    ));
-                    return self::$_bdd->lastInsertId();
 
-                }
-            } catch (PDOException $e) {
-                print "Erreur : " . $e->getMessage();
-                die();
-                return -1;
-            }
-        }
 
         public function getRoomsFromType($type){
             $sqlreq = ' select * from chambre where Type is ?';
