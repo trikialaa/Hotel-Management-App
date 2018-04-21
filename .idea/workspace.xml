@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="j'ai séparé les deux fichiers reservation">
-      <change afterPath="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/Singlerooms.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Singlerooms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\GL2WebProject\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,17 +31,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="bdhotel@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bdhotel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bdhotel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bdhotel: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -52,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -60,26 +48,42 @@
       <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-675">
-              <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+            <state relative-caret-position="549">
+              <caret line="83" column="68" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="79" />
+              <folding>
+                <element signature="n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1859#1866#1#HTML" expanded="true" />
+                <element signature="e#2602#2609#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="294">
+              <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+              <folding>
+                <element signature="e#394#436#0" />
+                <element signature="e#465#506#0" />
+                <element signature="e#802#848#0" />
+                <element signature="e#930#975#0" />
+                <element signature="e#1010#1177#0" />
+                <element signature="e#1525#1561#0" />
+                <element signature="e#1582#1647#0" />
+                <element signature="n#!!block;n#refresh_table#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/php/controlClass/Singlerooms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="408">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -164,9 +168,9 @@
         <option value="$PROJECT_DIR$/app/views/Reservation.php" />
         <option value="$PROJECT_DIR$/app/views/CheckInForm.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/js/table.js" />
+        <option value="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" />
       </list>
     </option>
   </component>
@@ -190,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +205,12 @@
               <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
@@ -232,13 +241,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -297,6 +310,7 @@
       <workItem from="1524295818262" duration="2165000" />
       <workItem from="1524298081914" duration="2717000" />
       <workItem from="1524308073757" duration="1194000" />
+      <workItem from="1524317440516" duration="2044000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -393,13 +407,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44869000" />
+    <option name="totallyTimeSpent" value="46896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14072494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1684435" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.080617495" />
@@ -412,16 +426,28 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16822916" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.7579957" weight="0.025698325" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32905483" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.21801706" />
       <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.080617495" />
+      <window_info anchor="bottom" id="Database Changes" order="14" sideWeight="0.49946696" weight="0.5217877" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.06695464" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,13 +506,7 @@
     <entry file="file://$PROJECT_DIR$/action_page.php" />
     <entry file="file://$PROJECT_DIR$/db.php" />
     <entry file="file://$PROJECT_DIR$/Singlerooms.php" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/meta.rnc" />
     <entry file="file://$PROJECT_DIR$/css/form_check_in.css" />
     <entry file="file://$PROJECT_DIR$/formulaireCheckin.php" />
     <entry file="file://$PROJECT_DIR$/router/public/start.bat" />
@@ -537,20 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-          <folding>
-            <element signature="e#900#906#0#HTML" expanded="true" />
-            <element signature="e#906#912#0#HTML" expanded="true" />
-            <element signature="e#1118#1124#0#HTML" expanded="true" />
-            <element signature="e#1124#1130#0#HTML" expanded="true" />
-            <element signature="e#1317#1323#0#HTML" expanded="true" />
-            <element signature="e#1323#1329#0#HTML" expanded="true" />
-            <element signature="e#1527#1533#0#HTML" expanded="true" />
-            <element signature="e#1533#1539#0#HTML" expanded="true" />
-            <element signature="e#1716#1722#0#HTML" expanded="true" />
-            <element signature="e#1722#1728#0#HTML" expanded="true" />
-            <element signature="e#3242#3248#0#HTML" expanded="true" />
-            <element signature="e#3248#3254#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,7 +591,7 @@
     <entry file="uml://DATABASE/77ad0cb6-3c97-47f7-b461-53459aff8b5f.SCHEMA:bdhotel">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>DATABASE</ID>
+          <ID />
           <OriginalElement>77ad0cb6-3c97-47f7-b461-53459aff8b5f.SCHEMA:bdhotel</OriginalElement>
           <nodes>
             <node x="311.75" y="380.0">77ad0cb6-3c97-47f7-b461-53459aff8b5f.TABLE:bdhotel.facturecomplete</node>
@@ -628,40 +634,54 @@
               <point x="40.0" y="70.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-94.0" y="199.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-94.0" y="200.0" />
           <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+          <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/Singlerooms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        <state relative-caret-position="549">
+          <caret line="83" column="68" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="79" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1859#1866#1#HTML" expanded="true" />
+            <element signature="e#2602#2609#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="294">
+          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+          <folding>
+            <element signature="e#394#436#0" />
+            <element signature="e#465#506#0" />
+            <element signature="e#802#848#0" />
+            <element signature="e#930#975#0" />
+            <element signature="e#1010#1177#0" />
+            <element signature="e#1525#1561#0" />
+            <element signature="e#1582#1647#0" />
+            <element signature="n#!!block;n#refresh_table#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/controlClass/Singlerooms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
