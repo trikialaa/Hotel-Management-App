@@ -303,19 +303,169 @@
             }
         }
 
-        //update client
+        //update client - returns boolean
+        public function updateClientInfo($clientid, $ntel, $email){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("UPDATE `client` set `NTel` = ? ,  `Email` = ? where `client.CLIENTID`= ?");
+                    $req->execute(array($ntel,$email,$clientid));
+                    return true;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+                return false;
+            }
+        }
 
-        //remove sejour after checkout
+        //remove sejour after checkout - return boolean
+        public function deleteSejour($sejourid){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("DELETE FROM `sejour` where `SEJOURID` = ?");
+                    $req->execute(array($sejourid));
+                    return true;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+                return false;
+            }
+        }
+        //returns sejourid from room
+        public function getSejourFromRoom($room){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("SELECT * FROM `sejour` where `CHAMBREID` = ? and RESERVE = ?");
+                    $req->execute(array($room,0));
+
+                    $a = $req->fetch(PDO::FETCH_CLASS,"Sejour");
+                    return $a->SEJOURID;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+                return -1;
+            }
+        }
 
         //generate facture
+        public function  generateFacture($sejourid){
+
+            $sqlreq = "SELECT * from `elementfacture` inner join `facturecomplete` f on `elementfacture.ELEMENTID` = `f.ELEMENTID`
+                                                      inner join `sejour` s on `f.SEJOURID` = `s.SEJOURID`
+                                                      where `f.SEJOURID`  = ? ";
+
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array($sejourid));
+                    return $req->fetchAll(PDO::FETCH_CLASS,'ElementFacture');
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+                return null;
+            }
+
+
+        }
 
         //unlink sejour - client when checking out
+        public function unlinkSejourFromClient($idclient,$sejourid){
+            $sqlreq = "DELETE from `sejourclient` where `CLIENTID` = ? and `SEJOURID` = ?";
+
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array( $idclient, $sejourid ));
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return false;
+            }
+        }
 
         //remove dead reservations
+        public function removeDeadReservation(){
+            $today = date("Y-m-d");
+            $sqlreq = "DELETE FROM `sejour` where `RESERVE` = ? and `CheckIn` <= ? ";
 
-        //add element facture to sejour when consumming
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array(1,$today));
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
 
-        //add agent by admin
+                return false;
+            }
+
+        }
+
+        //add element facture to sejour when consumming - return boolean as function state
+        public function addConsumptionToSejour($idsejour,$iditem){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("insert into facturecomplete (`SEJOURID`, `ELEMENTID`) 
+                                                           VALUES (:val1,:val2)");
+                    $req->execute(array(
+                        'val1' => $idsejour,
+                        'val2' => $iditem
+                    ));
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return false;
+            }
+        }
+
+        //add agent by admin - return his id in database
+        public function addAgent($prenom, $nom, $adr, $NumTel, $login,$password)
+        {
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("insert into bdhotel.agent (`FirstName`, `LastName`, `NumTel`, `Address`, `Login_Agent`, `Password_Agent`) 
+                                                           VALUES (:val1,:val2,:val3,:val4,:val5,:val6)");
+                    $req->execute(array(
+                        'val1' => $prenom,
+                        'val2' => $nom,
+                        'val3' => $NumTel,
+                        'val4' => $adr,
+                        'val5' => $login,
+                        'val6' => $password
+                    ));
+                    return self::$_bdd->lastInsertId();
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return -1;
+            }
+
+
+        }
+
+
 
         /*
 
