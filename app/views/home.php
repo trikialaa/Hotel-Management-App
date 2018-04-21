@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <link rel="stylesheet" href="css\homepage.css" type="text/css">
+    <link rel="stylesheet" href="app/css/homepage.css" type="text/css">
     <title></title>
 </head>
 <body>

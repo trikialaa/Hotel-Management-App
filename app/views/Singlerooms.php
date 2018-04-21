@@ -1,5 +1,5 @@
 <?php
-require '../public/php/controlClass/BDRequestManager.php';
+require 'app/php/controlClass/BDRequestManager.php';
 $bdrm = BDRequestManager::getInstance();
 if (isset($_GET["refresh"]) && isset($_GET["date_in"]) && isset ($_GET["date_out"]) ) {
     $rooms = $bdrm->getOccupiedRooms();
@@ -12,7 +12,7 @@ if (isset($_GET["refresh"]) && isset($_GET["date_in"]) && isset ($_GET["date_out
 <head>
     <meta charset="UTF-8">
     <title>single rooms</title>
-    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="app/css/table.css">
     <script>
         var rooms_js=<?php echo json_encode($rooms); ?>;
     </script>
@@ -83,6 +83,6 @@ if (isset($_GET["refresh"]) && isset($_GET["date_in"]) && isset ($_GET["date_out
     </dialog>
 </div>
 </body>
-<script src="js/table.js"></script>
+<script src="app/js/table.js"></script>
 
 </html>

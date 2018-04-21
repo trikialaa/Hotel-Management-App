@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <link rel="stylesheet" href="css/navbarstyle.css">
+    <link rel="stylesheet" type="text/css" href="app/css/login.css">
+    <link rel="stylesheet" href="app/css/navbarstyle.css">
 </head>
 <body>
-<form action="php\controlClass\login.php" method="POST">
+<form action="app/php/controlClass/login.php" method="POST">
     <div class="img_container">
-        <img src="img/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="app/img/img_avatar.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">

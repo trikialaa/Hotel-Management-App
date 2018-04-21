@@ -6,10 +6,10 @@
  * Time: 13:38
  */
 
-    require __DIR__ .'/../dataClass/Client.php';
-    require __DIR__ .'/../dataClass/Chambre.php';
-    require __DIR__ .'/../dataClass/Agent.php';
-    require __DIR__ .'/../dataClass/ElementFacture.php';
+    require __DIR__ . '/../dataClass/Client.php';
+    require __DIR__ . '/../dataClass/Chambre.php';
+    require __DIR__ . '/../dataClass/Agent.php';
+    require __DIR__ . '/../dataClass/ElementFacture.php';
 
 
     class BDRequestManager

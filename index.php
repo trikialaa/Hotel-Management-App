@@ -5,40 +5,37 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 // Route it up!
 switch ($request_uri[0]) {
     // Home page
-    case '/':
-        require '../views/index.php';
-        break;
 
     case '/home':
-        require '../views/home.php';
+        require 'app/views/home.php';
         break;
 
     case '/login':
-    require '../views/login.php';
+    require 'app/views/login.php';
     break;
 
     case '/reservation':
-        require '../views/Reservation.php';
+        require 'app/views/Reservation.php';
         break;
 
     case '/singlerooms':
-        require '../views/Singlerooms.php';
+        require 'app/views/Singlerooms.php';
         break;
     case '/elfac':
-        require 'php/controlClass/elementfacturetab.php';
+        require 'app/php/controlClass/elementfacturetab.php';
         break;
     case '/checkin':
-        require '../views/CheckInForm.php';
+        require 'app/views/CheckInForm.php';
         break;
     case '/checkcin':
-        require '../views/CheckCIN.php';
+        require 'app/views/CheckCIN.php';
         break;
     case '/consomation':
-        require '../views/consommation.php';
+        require 'app/views/consommation.php';
         break;
 
     default:
         header('HTTP/1.0 404 Not Found');
-        require '../views/404.php';
+        require 'app/views/404.php';
         break;
 }

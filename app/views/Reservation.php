@@ -16,11 +16,11 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/form_check_in.css">
 
 </head>
 <body>
-<form method="POST" action="../public/php/controlClass/Reservation.php" >
+<form method="POST" action="app/php/controlClass/Reservation.php" >
     <div class="form-group">
         <h2 class="heading">Effectuer réservation</h2>
 

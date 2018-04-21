@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="..\..\router\public\css\form_check_in.css">
+    <link rel="stylesheet" href="app/css/form_check_in.css">
 
 
 </head>
@@ -124,14 +124,14 @@
     </div>
     </div> <!-- /.form-group -->
 </form>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery-ui-autocomplete.js'></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.js'></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type="javascript"></script>
+<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery-ui-autocomplete.js' type="javascript"></script>
+<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.js' type="javascript"></script>
+<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.min.js' type="javascript"></script>
 
 
 
-<script  src="..\..\js\form_check_in.js"></script>
+<script  src="app/js/form_check_in.js"></script>
 
 
 

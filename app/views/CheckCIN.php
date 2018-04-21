@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/form_check_in.css">
 </head>
 <body>
-<form method="POST" action="\php\controlClass\cin.php" >
+<form method="POST" action="app/php/controlClass/cin.php" >
     <div class="form-group">
         <h2 class="heading">Vérifier réservation</h2>
 
