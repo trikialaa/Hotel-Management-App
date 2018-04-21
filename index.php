@@ -5,6 +5,9 @@
             case '/home':
                 require 'app/views/home.php';
                 break;
+            case '/debug':
+                require 'app/php/controlClass/BDRequestInterface.php';
+                break;
             case '/login':
                 require 'app/views/login.php';
                 break;

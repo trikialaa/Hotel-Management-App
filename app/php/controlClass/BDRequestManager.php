@@ -48,6 +48,7 @@
                 return self::$_bdrm;
         }
 
+        //done
         // add client from attributes to database - returns his database id
         public function addClientToBd($nom, $prenom, $ntel, $email, $idtype, $idnumber)
         {
@@ -75,18 +76,19 @@
 
         }
 
+        //done
         // add client from attributes to database  fro reservation - returns his database id
         public function addClientToBdForReservation($nom, $prenom,$idtype, $idnumber)
         {
             try {
                 if (isset(self::$_bdrm)) {
-                    $req = self::$_bdd->prepare("insert into bdhotel.client (`nom`, `prenom`, `NTel`, `email`, `idtype`, `idnumber`) 
-                                                           VALUES (:val1,:val2,:val5,:val6)");
+                    $req = self::$_bdd->prepare("insert into client (`nom`, `prenom`, `idtype`, `idnumber`) 
+                                                           VALUES (:val1,:val2,:val3,:val4)");
                     $req->execute(array(
                         'val1' => $nom,
                         'val2' => $prenom,
-                        'val5' => $idtype,
-                        'val6' => $idnumber,
+                        'val3' => $idtype,
+                        'val4' => $idnumber
                     ));
                     return self::$_bdd->lastInsertId();
                 }
@@ -100,6 +102,7 @@
 
         }
 
+        //done
         //return array of all clients in database
         public function getAllClients(){
             $sqlreq = "SELECT * FROM CLIENT";
@@ -114,6 +117,7 @@
             }
         }
 
+        //done
         //check the admin's credentials - returns boolean
         public function checkAdmin($login,$mdp){
             $sqlreq = "SELECT * FROM admin where admin.LOGIN = ? and admin.PASSWORD = ?";
@@ -133,6 +137,7 @@
             }
         }
 
+        //done
         //return true if agent login is available - false if not
         public function checkAgentLogin($login){
             $sqlreq = "SELECT * FROM agent where agent.Login_Agent = ?";
@@ -154,6 +159,7 @@
             }
         }
 
+        //done
         //returns the client bd id if exists - if not returns -1
         public function isClientInBd($idtype,$idval){
             $sqlreq = "SELECT * FROM client cl where cl.IDNumber = ? and cl.IDType = ?";
@@ -175,6 +181,7 @@
             }
         }
 
+        //done
         //check the agent's credentials - returns agent object
         public function checkAgent($login,$mdp){
             $sqlreq = "SELECT * FROM agent where agent.Login_Agent = ? and agent.Password_Agent = ?";
@@ -197,6 +204,7 @@
             }
         }
 
+        //done
         //returns all element facture by type
         public function getElementFactureByType($type){
             $sqlreq = "SELECT * FROM elementfacture el where el.TYPE = ? ";
@@ -211,6 +219,7 @@
             }
         }
 
+        //done
         //returns all distinct types of element facture
         public function getAllEFTypes(){
             $sqlreq = "SELECT DISTINCT el.TYPE FROM elementfacture el";
@@ -226,17 +235,18 @@
 
         }
 
+        //done
         //create reservation form roomnumber and two dates - returns database sejour id at success - -1 if not
         public function createReservation($roomnumber,$datearr,$datedepp){
             try {
                 if (isset(self::$_bdrm)) {
                     $req = self::$_bdd->prepare("insert into sejour (`CheckIn`, `CheckOut`, `CHAMBREID`, `RESERVE`) 
-                                                           VALUES (:val1,:val2,:val5,:val6)");
+                                                           VALUES (:val1,:val2,:val3,:val4)");
                     $req->execute(array(
-                        'val1' => $datearr,
-                        'val2' => $datedepp,
-                        'val5' => $roomnumber,
-                        'val6' => 1,
+                        'val1' => date("Y-m-d", strtotime($datearr)),
+                        'val2' => date("Y-m-d", strtotime($datedepp)),
+                        'val3' => $roomnumber,
+                        'val4' => 1
                     ));
                     return self::$_bdd->lastInsertId();
                 }
@@ -251,6 +261,7 @@
             }
         }
 
+        //done
         //link client and sejour in SEJOURCLIENT table in database
         public function addClientToSejour($idclient,$idsejour){
             try {
@@ -273,11 +284,13 @@
             }
         }
 
+
+        //done
         //get reservations by client id - returns array of Sejour having reservation set to 1
         public function getReservationsForClient($idclient){
             try {
                 if (isset(self::$_bdrm)) {
-                    $req = self::$_bdd->prepare("select * from `sejour` inner join `sejourclient` s on `sejour.SEJOURID` = `s.SEJOURID` where `CLIENTID` = ? and `sejour.RESERVE` = ?");
+                    $req = self::$_bdd->prepare("select * from sejour e inner join sejourclient s on e.SEJOURID = s.SEJOURID where s.CLIENTID = ? and  e.RESERVE = ?");
                     $req->execute(array($idclient,1));
                     return $req->fetchAll(PDO::FETCH_CLASS,"Sejour");
                 }
@@ -288,6 +301,7 @@
             }
         }
 
+        //done
         //converts reservation to normal sejour when checking in
         public function setReservationToFalse($sejourid){
             try {
@@ -303,11 +317,12 @@
             }
         }
 
+        //done
         //update client - returns boolean
         public function updateClientInfo($clientid, $ntel, $email){
             try {
                 if (isset(self::$_bdrm)) {
-                    $req = self::$_bdd->prepare("UPDATE `client` set `NTel` = ? ,  `Email` = ? where `client.CLIENTID`= ?");
+                    $req = self::$_bdd->prepare("UPDATE client set `NTel` = ? ,  `Email` = ? where `CLIENTID` = ?");
                     $req->execute(array($ntel,$email,$clientid));
                     return true;
                 }
@@ -318,6 +333,7 @@
             }
         }
 
+        //done
         //remove sejour after checkout - return boolean
         public function deleteSejour($sejourid){
             try {
@@ -332,6 +348,8 @@
                 return false;
             }
         }
+
+        //done
         //returns sejourid from room
         public function getSejourFromRoom($room){
             try {
@@ -339,8 +357,10 @@
                     $req = self::$_bdd->prepare("SELECT * FROM `sejour` where `CHAMBREID` = ? and RESERVE = ?");
                     $req->execute(array($room,0));
 
-                    $a = $req->fetch(PDO::FETCH_CLASS,"Sejour");
-                    return $a->SEJOURID;
+                    $a = $req->fetch(PDO::FETCH_OBJ);
+                    if(isset($a->SEJOURID))
+                        return $a->SEJOURID;
+                    return -1;
                 }
             } catch (PDOException $e) {
                 print "Erreur : " . $e->getMessage();
@@ -349,12 +369,14 @@
             }
         }
 
+        //done
         //generate facture
         public function  generateFacture($sejourid){
 
-            $sqlreq = "SELECT * from `elementfacture` inner join `facturecomplete` f on `elementfacture.ELEMENTID` = `f.ELEMENTID`
-                                                      inner join `sejour` s on `f.SEJOURID` = `s.SEJOURID`
-                                                      where `f.SEJOURID`  = ? ";
+            $sqlreq = "SELECT * from facturecomplete e
+                                inner join elementfacture f on e.ELEMENTID = f.ELEMENTID   
+                                inner join bdhotel.sejour s on e.SEJOURID = s.SEJOURID     
+                                where s.SEJOURID  = ? ";
 
             try {
                 if (isset(self::$_bdrm)) {
@@ -371,7 +393,8 @@
 
         }
 
-        //unlink sejour - client when checking out
+        //done
+        //unlink sejour - client when checking out - return boolean
         public function unlinkSejourFromClient($idclient,$sejourid){
             $sqlreq = "DELETE from `sejourclient` where `CLIENTID` = ? and `SEJOURID` = ?";
 
@@ -392,11 +415,11 @@
             }
         }
 
+        //done
         //remove dead reservations
         public function removeDeadReservation(){
             $today = date("Y-m-d");
-            $sqlreq = "DELETE FROM `sejour` where `RESERVE` = ? and `CheckIn` <= ? ";
-
+            $sqlreq = "DELETE FROM sejour where `RESERVE` = ? and `CheckIn` < ? ";
             try {
                 if (isset(self::$_bdrm)) {
                     $req = self::$_bdd->prepare($sqlreq);
@@ -415,15 +438,41 @@
 
         }
 
-        //add element facture to sejour when consumming - return boolean as function state
-        public function addConsumptionToSejour($idsejour,$iditem){
+        //done
+        //get dead reservations
+        public function getDeadReservation(){
+            $today = date("Y-m-d");
+            $sqlreq = "SELECT * FROM `sejour` where `RESERVE` = ? and `CheckIn` < ? ";
+
             try {
                 if (isset(self::$_bdrm)) {
-                    $req = self::$_bdd->prepare("insert into facturecomplete (`SEJOURID`, `ELEMENTID`) 
-                                                           VALUES (:val1,:val2)");
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array(1,$today));
+                    return $req->fetchAll(PDO::FETCH_CLASS,"Sejour");
+                }
+                else{
+                    return null;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return null;
+            }
+
+        }
+
+        //done
+        //---------- CONSUMPTION MANAGER ---------------- USE ONLY RESOLVE CONSUMPTION
+        private function addConsumptionToSejour($idsejour,$iditem,$quantite){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("insert into facturecomplete (`SEJOURID`, `ELEMENTID`,`Quantite`) 
+                                                           VALUES (:val1,:val2,:val3)");
                     $req->execute(array(
                         'val1' => $idsejour,
-                        'val2' => $iditem
+                        'val2' => $iditem,
+                        'val3' => $quantite
                     ));
                     return true;
                 }
@@ -437,7 +486,61 @@
                 return false;
             }
         }
+        //done
+        private function checkElementExistsInFacture($idsejour,$iditem){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare("SELECT * from facturecomplete 
+                                  where `ELEMENTID` = ? and `SEJOURID` = ? ");
 
+                    $req->execute(array($iditem,$idsejour));
+                    $res = $req->fetch(PDO::FETCH_OBJ);
+                    if(isset($res->ELEMENTID))
+                        return $res;
+                    return -1;
+                }
+                else{
+                    return -1;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return false;
+            }
+
+        }
+        //done
+        private function updateQuantiteElementFacture($idsejour,$iditem,$quatiteFinal){
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare(" UPDATE facturecomplete  
+                                  set `Quantite` = ? where `sejourid` = ?  and `elementid` = ?");
+
+                    $req->execute(array($quatiteFinal,$idsejour,$iditem));
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return false;
+            }
+        }
+        //done
+        public function resolveConsumption($idsejour,$iditem,$quantite){
+            $a = $this->checkElementExistsInFacture($idsejour,$iditem);
+            if(isset($a->ELEMENTID)){
+                $this->updateQuantiteElementFacture($idsejour,$iditem,$a->Quantite + $quantite);
+            }else{
+                $this->addConsumptionToSejour($idsejour,$iditem,$quantite);
+            }
+        }
+
+        //done
         //add agent by admin - return his id in database
         public function addAgent($prenom, $nom, $adr, $NumTel, $login,$password)
         {
@@ -467,6 +570,13 @@
 
 
 
+
+        /**
+        FIX ELEMENT FACTURE TABLE + TREAMTMENT-
+
+
+
+         **/
         /*
 
         public function  getClientsFromRoom($roomid){

@@ -8,20 +8,6 @@
 
         require 'BDRequestManager.php';
 
-
-        function showClientInRow($bdrm){
-
-            $b = $bdrm->getAllClients();
-            Client::startTable();
-            foreach ($b as $value) {
-                echo $value->showInRow();
-            }
-            Client::endTable();
-        }
-
         echo "helloFromBDInterface<br>";
 
         $bdrm = BDRequestManager::getInstance();
-
-
-

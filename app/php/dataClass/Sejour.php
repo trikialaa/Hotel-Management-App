@@ -15,8 +15,16 @@ class Sejour
     public $RESERVE;
 
 
-    private function __construct()
+
+    public function __construct()
     {
+        if(func_num_args()!=0){
+            $this->SEJOURID = func_get_arg(0)->SEJOURID;
+            $this->CheckIn = func_get_arg(0)->CheckIn;
+            $this->CheckOut = func_get_arg(0)->CheckOut;
+            $this->CHAMBREID = func_get_arg(0)->CHAMBREID;
+            $this->RESERVE = func_get_arg(0)->RESERVE;
+        }
     }
 
     public function showInRow(){

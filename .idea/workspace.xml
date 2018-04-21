@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/php/dataClass/Sejour.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/php/controlClass/BDRequestInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/controlClass/BDRequestInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/php/controlClass/cin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/controlClass/cin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/php/dataClass/Sejour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/dataClass/Sejour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\GL2WebProject\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,47 +51,17 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="68" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
-              <folding>
-                <element signature="n#!!block;n#refresh_table#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/controlClass/Singlerooms.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BDRequestManager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BDRequestManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
+            <state relative-caret-position="152">
+              <caret line="465" column="16" lean-forward="true" selection-start-line="465" selection-start-column="16" selection-end-line="465" selection-end-column="16" />
               <folding>
                 <element signature="n#__construct#0;n#BDRequestManager#0;n#!!top" />
                 <element signature="n#getInstance#0;n#BDRequestManager#0;n#!!top" />
@@ -107,40 +78,39 @@
                 <element signature="n#addClientToSejour#0;n#BDRequestManager#0;n#!!top" />
                 <element signature="n#getReservationsForClient#0;n#BDRequestManager#0;n#!!top" />
                 <element signature="n#setReservationToFalse#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#updateClientInfo#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#deleteSejour#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getSejourFromRoom#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#generateFacture#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#unlinkSejourFromClient#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#removeDeadReservation#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#removeDeadReservation#1;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addConsumptionToSejour#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#checkElementExistsInFacture#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#updateQuantiteElementFacture#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#resolveConsumption#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addAgent#0;n#BDRequestManager#0;n#!!top" />
                 <element signature="e#8696#11884#0#PHP" />
+                <element signature="n#getOccupiedRooms#0;n#BDRequestManager#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sejour.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/php/dataClass/Sejour.php">
+      <file leaf-file-name="BDRequestInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="119">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/controlClass/Reservation.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Client.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/dataClass/Client.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="5" lean-forward="true" selection-end-line="42" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/controlClass/cin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+      <file leaf-file-name="elementfacture" pinned="false" current-in-tab="false">
+        <entry file="das://77ad0cb6-3c97-47f7-b461-53459aff8b5f/schema/bdhotel/table/elementfacture">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -224,12 +194,13 @@
         <option value="$PROJECT_DIR$/app/views/login.php" />
         <option value="$PROJECT_DIR$/app/views/Reservation.php" />
         <option value="$PROJECT_DIR$/app/views/CheckInForm.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/js/table.js" />
         <option value="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/php/controlClass/cin.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/php/dataClass/Sejour.php" />
+        <option value="$PROJECT_DIR$/app/php/controlClass/BDRequestInterface.php" />
         <option value="$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php" />
       </list>
     </option>
@@ -245,9 +216,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="977" />
-    <option name="height" value="1039" />
+    <option name="x" value="-11" />
+    <option name="width" value="1172" />
+    <option name="height" value="1247" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -298,6 +269,12 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="dataClass" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -372,7 +349,9 @@
       <workItem from="1524298081914" duration="2717000" />
       <workItem from="1524308073757" duration="1194000" />
       <workItem from="1524317440516" duration="2136000" />
-      <workItem from="1524323554704" duration="4852000" />
+      <workItem from="1524323554704" duration="13737000" />
+      <workItem from="1524340984856" duration="3000" />
+      <workItem from="1524341628712" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -479,40 +458,91 @@
       <option name="project" value="LOCAL" />
       <updated>1524319605533</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="j'ai séparé les deux fichiers reservation">
+      <created>1524328420992</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1524328420992</updated>
+    </task>
+    <task id="LOCAL-00017" summary="j'ai séparé les deux fichiers reservation">
+      <created>1524333873273</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1524333873273</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51840000" />
+    <option name="totallyTimeSpent" value="65760000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1704698" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.080617495" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1818792" />
       <window_info anchor="bottom" id="Database Changes" order="14" sideWeight="0.49946696" weight="0.5217877" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.7579957" weight="0.025698325" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" weight="0.025728988" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" visible="true" weight="0.04291045" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.08208955" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16680162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.066273935" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="8" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.116145834" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.7579957" weight="0.025698325" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32905483" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.13691376" />
       <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.080617495" />
+      <window_info anchor="bottom" id="Database Changes" order="14" sideWeight="0.49946696" weight="0.5217877" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" weight="0.025728988" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" visible="true" weight="0.3452514" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" weight="0.3295711" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.116145834" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3295325" />
+      <window_info anchor="bottom" id="Database Changes" order="15" sideWeight="0.49946696" weight="0.5217877" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="9" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32905483" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.13691376" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" weight="0.025728988" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.080617495" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.7579957" weight="0.025698325" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -533,34 +563,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.php" />
     <entry file="file://$PROJECT_DIR$/zeineb.php" />
     <entry file="file://$PROJECT_DIR$/db/users.sql" />
@@ -579,7 +581,6 @@
     <entry file="file://$PROJECT_DIR$/app/php/controlClass/login.php" />
     <entry file="file://$PROJECT_DIR$/app/php/controlClass/elementfacturetab.php" />
     <entry file="file://$PROJECT_DIR$/app/php/dataClass/Agent.php" />
-    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Chambre.php" />
     <entry file="file://$PROJECT_DIR$/app/php/dataClass/ElementFacture.php" />
     <entry file="file://$PROJECT_DIR$/PROJECT/login.php" />
     <entry file="file://$PROJECT_DIR$/PROJECT/Singlerooms.php" />
@@ -699,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
@@ -717,9 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!block;n#refresh_table#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -729,9 +720,6 @@
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/Reservation.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/php/dataClass/Client.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -747,10 +735,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Sejour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://77ad0cb6-3c97-47f7-b461-53459aff8b5f/schema/bdhotel/table/sejourclient">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://77ad0cb6-3c97-47f7-b461-53459aff8b5f/schema/bdhotel/table/client">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://77ad0cb6-3c97-47f7-b461-53459aff8b5f/schema/bdhotel/table/sejour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://77ad0cb6-3c97-47f7-b461-53459aff8b5f/schema/bdhotel/table/facturecomplete">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://77ad0cb6-3c97-47f7-b461-53459aff8b5f/schema/bdhotel/table/elementfacture">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
+        <state relative-caret-position="152">
+          <caret line="465" column="16" lean-forward="true" selection-start-line="465" selection-start-column="16" selection-end-line="465" selection-end-column="16" />
           <folding>
             <element signature="n#__construct#0;n#BDRequestManager#0;n#!!top" />
             <element signature="n#getInstance#0;n#BDRequestManager#0;n#!!top" />
@@ -767,15 +811,21 @@
             <element signature="n#addClientToSejour#0;n#BDRequestManager#0;n#!!top" />
             <element signature="n#getReservationsForClient#0;n#BDRequestManager#0;n#!!top" />
             <element signature="n#setReservationToFalse#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#updateClientInfo#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#deleteSejour#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getSejourFromRoom#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#generateFacture#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#unlinkSejourFromClient#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#removeDeadReservation#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#removeDeadReservation#1;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addConsumptionToSejour#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#checkElementExistsInFacture#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#updateQuantiteElementFacture#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#resolveConsumption#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addAgent#0;n#BDRequestManager#0;n#!!top" />
             <element signature="e#8696#11884#0#PHP" />
+            <element signature="n#getOccupiedRooms#0;n#BDRequestManager#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Sejour.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>
