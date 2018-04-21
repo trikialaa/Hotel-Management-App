@@ -33,16 +33,37 @@
         <fieldset>
             <h2 class="heading">Information de la réservation </h2>
 
-            <p align="left">
-                <b> <i class="material-icons">person</i> &nbsp;&nbsp; Cin Client: </b>
-                <div class="controls">
-            <p class="floatLabel" size="15">ici le cin  recuperé</p>
+        </fieldset>
     </div>
+
+
+
     <p align="left">
-        <b> <i class="material-icons">phone</i> &nbsp;&nbsp; Num Tel client</b>
+        <b> <i </i> &nbsp;&nbsp;type id</b></p>
+    <div class="controls">
+        <select>
+            <option>CIN</option>
+            <option>N°passport</option>
+        </select>
+    </div>
+
+
+    <p align="left">
+        <b> <i class="material-icons">person</i> &nbsp;&nbsp; Id Client: </b></p>
+    <div class="controls">
+        <p class="floatLabel" size="15">ici le cin  recuperé</p>
+    </div>
+
+
+
+
+    <p align="left">
+        <b> <i class="material-icons">phone</i> &nbsp;&nbsp; Num Tel client</b></p>
         <div class="controls">
     <p class="floatLabel" size="15">ici le num tel  recuperé</p>
     </div>
+
+
     <p align="left">
         <b > <i class="fa fa-home"></i>&nbsp;&nbsp;Type chambre </b>
         <div class="controls">
