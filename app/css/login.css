@@ -1,6 +1,6 @@
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    border: 3px solid #84642c;
 }
 
 /* Full-width inputs */
@@ -9,14 +9,14 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #84642c;
     box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #2b2512;
+    color: #d0b861;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -33,7 +33,7 @@ button:hover {
 .cancel_btn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: #84642c;
 }
 
 /* Center the avatar image inside this container */
@@ -51,6 +51,7 @@ img.avatar {
 /* Add padding to containers */
 .container {
     padding: 15px;
+
 }
 
 /* The "Forgot password" text */
@@ -68,4 +69,28 @@ span.psw {
     .cancel_btn {
         width: 100%;
     }
+}
+
+.container1 {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: #d0b861;
+}
+
+.bg-img {
+
+    background-color: black;
+    background-image: url("/app/img/logo.png");
+    min-height: 600px;
+
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+* {
+    box-sizing: border-box;
 }

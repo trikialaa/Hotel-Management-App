@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="app/css/navbarstyle.css">
 </head>
 <body>
-<form action="app/php/controlClass/login.php" method="POST">
-    <div class="img_container">
-        <img src="app/img/img_avatar.png" alt="Avatar" class="avatar">
-    </div>
 
-    <div class="container">
-        <label for="username"><b>Username</b></label>
-        <input id="username" type="text" placeholder="Enter Username" name="username" required>
+<div class="bg-img">
 
-        <label for="password"><b>Password</b></label>
-        <input id="password" type="password" placeholder="Enter Password" name="password" required>
+    <form action="app/php/controlClass/login.php" method="POST">
+        <div class="container1">
+            <div class="img_container">
+                <img src="app/img/img_avatar.png" alt="Avatar" class="avatar">
+            </div>
 
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-    </div>
+            <div class="container">
+                <label for="username"><b>Username</b></label>
+                <input id="username" type="text" placeholder="Enter Username" name="username" required>
 
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancel_btn">Cancel</button>
-    </div>
-</form>
+                <label for="password"><b>Password</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container">
+                <button type="button" class="cancel_btn">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

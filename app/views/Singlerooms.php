@@ -70,7 +70,7 @@
                 </div>
 
             </div>
-            <?php if(isset($message)) echo $message;?>
+
 
             <div id="checkin_dialogue" class="modal">
                 <div class="modal-content">
