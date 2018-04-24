@@ -1,8 +1,9 @@
 #navbar {
     overflow: hidden;
     height: 60px;
-    background-color: gold;
+    background-color: #84642c;
     width: 100%;
+    border-radius: 4px;
 }
 
 #navbar a {
@@ -31,5 +32,5 @@
 }
 
 #navbar :hover {
-    background-color: black;
+    opacity: 0.6;
 }

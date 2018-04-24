@@ -7,7 +7,7 @@
  */
 
     require 'BDRequestManager.php';
-
+session_start();
     $bdrm = BDRequestManager::getInstance();
 
     if($bdrm->checkAgentLogin($_POST['username'])){
@@ -22,8 +22,7 @@
 
             $_SESSION['logged_in'] = true;
 
-            echo "welcome " .$response->LastName.' '.$response->FirstName ;
-
+            header("Location: /home");
         }else{
             echo "ERROR !!  WRONG PASSWORD ";
         }
