@@ -134,7 +134,7 @@
             btn1.parentElement.removeChild(btn1);
             var dialogres = document.getElementById("reservation_dialogue");
             dialogres.style.display = "none";
-            return true;
+            return false;
         }
 
         var checkinform = document.getElementById("checkinform");
@@ -150,7 +150,20 @@
             btn2.parentElement.removeChild(btn2);
             var dialogcheckin = document.getElementById("checkin_dialogue");
             dialogcheckin.style.display = "none";
-            return true;
+
+            return false;
         }
 
+        var dates = document.getElementById("dates");
+        dates.onsubmit = function () {
+            return false;
+
+        }
+
+        if ((date_in) && (date_out)) {
+            document.getElementById("date_in").value = date_in;
+            document.getElementById("date_out").value = date_out;
+            document.getElementById("date_in_form").value = date_in;
+            document.getElementById("date_out_form").value = date_out;
+        }
 
