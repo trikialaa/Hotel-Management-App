@@ -1,11 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: olfa
- * Date: 19/04/2018
- * Time: 20:19
- */
+include("navbar.php");
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

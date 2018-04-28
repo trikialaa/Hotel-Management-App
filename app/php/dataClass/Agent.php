@@ -9,9 +9,10 @@
 class Agent
 {
     public $AGENTID;
-    public  $LastName;public $FirstName;
+    public $LastName;
+    public $FirstName;
     public $Address;
-    public  $NumTel;
+    public $NumTel;
     public $Login_Agent;
     public $Password_Agent;
 

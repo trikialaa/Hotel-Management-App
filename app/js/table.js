@@ -1,23 +1,8 @@
         var body = document.querySelector("body");
 
 
-        //MODAL WORKING FOR FIREFOX FOR RESERVATION DIALAOGUE - CHANGED AFTER PROBLEM WITH DIALOG
-        var btn1 = document.createElement('input');
 
-        btn1.type = "button";
-        btn1.className = "btn";
-        btn1.value = "Reserver";
 
-        var dialogres = document.getElementById("reservation_dialogue");
-        var span = document.getElementById("spanclose");
-
-        btn1.onclick = function () {
-            dialogres.style.display = "block";
-        };
-
-        span.onclick = function() {
-            dialogres.style.display = "none";
-        }
 
 
 
@@ -41,7 +26,7 @@
         }
 
         window.onclick = function(event) {
-            if (event.target == dialogcheckin || event.target == dialogres) {
+            if (event.target == dialogcheckin) {
                 dialogcheckin.style.display = "none";
                 dialogres.style.display = "none";
             }
@@ -85,7 +70,6 @@
                 */
             cells[i].addEventListener("mouseover", function () {
                 if (this.className === "vert") {
-                    this.appendChild(btn1);
                     this.appendChild(btn2);
                     this.id = "room "+i;
                 }
@@ -127,15 +111,7 @@
 
         }
 
-        var resform = document.getElementById("resform");
 
-        resform.onsubmit = function () {
-            btn1.parentElement.className = "orange";
-            btn1.parentElement.removeChild(btn1);
-            var dialogres = document.getElementById("reservation_dialogue");
-            dialogres.style.display = "none";
-            return false;
-        }
 
         var checkinform = document.getElementById("checkinform");
 
