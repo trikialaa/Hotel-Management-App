@@ -14,7 +14,7 @@ session_start();
         echo('<a class="link" href="#">Ajouter Agent</a>'); //ajout du bouton si admin connecté
     }
     ?>
-    <a class="user" href="#"> Bienvenue <?php echo $_SESSION["Prenom"]; ?></a>
+    <a class="user" href="#">Bienvenue <?php echo $_SESSION["Prenom"]; ?></a>
     <link rel="stylesheet" type="text/css" href="app/css/navbarstyle.css" media="screen" />
 </div>
 <br>
