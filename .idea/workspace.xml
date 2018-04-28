@@ -99,7 +99,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1524948041081" expanded="true" signature="57626:57645" ph="..." />
+                <marker date="1524948041081" expanded="true" signature="57626:57676" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +112,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
               <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-              <folding />
+              <folding>
+                <marker date="1524947917805" expanded="true" signature="1207:1325" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -404,7 +409,7 @@
       <workItem from="1524353741051" duration="880000" />
       <workItem from="1524492585470" duration="2583000" />
       <workItem from="1524603003906" duration="7222000" />
-      <workItem from="1524645406485" duration="11160000" />
+      <workItem from="1524645406485" duration="11451000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -525,20 +530,26 @@
       <option name="project" value="LOCAL" />
       <updated>1524947779522</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="j'ai telecharger les fichier css et jquery dont on a besoin ( pour le script des formulaires )">
+      <created>1524947852554</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1524947852554</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71014000" />
+    <option name="totallyTimeSpent" value="71305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.024752475" sideWeight="0.24281392" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43939394" sideWeight="0.75718606" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43939394" sideWeight="0.75718606" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27389276" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24328679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -623,7 +634,8 @@
     <MESSAGE value="j'ai ajouté un fichier css , js et html" />
     <MESSAGE value="j'ai séparé les deux fichiers reservation" />
     <MESSAGE value="login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="login page" />
+    <MESSAGE value="j'ai telecharger les fichier css et jquery dont on a besoin ( pour le script des formulaires )" />
+    <option name="LAST_COMMIT_MESSAGE" value="j'ai telecharger les fichier css et jquery dont on a besoin ( pour le script des formulaires )" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -895,7 +907,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1524948041081" expanded="true" signature="57626:57645" ph="..." />
+            <marker date="1524948041081" expanded="true" signature="57626:57676" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -911,7 +926,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
+          <folding>
+            <marker date="1524947917805" expanded="true" signature="1207:1325" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
