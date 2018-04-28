@@ -145,11 +145,13 @@
     </div>
     </div> <!-- /.form-group -->
 </form>
+
+<script src='app/js/jquery-1.7.2.min.js'></script>
 <script  src="app/js/form_check_in.js"></script>
-<script src='app\js\jquery.min.js' type="javascript"></script>
-<script src='app\js\jquery-ui-autocomplete.js' type="javascript"></script>
-<script src='app\js\jquery-ui-autocomplete.js' type="javascript"></script>
-<script src='app\js\jquery.select-to-autocomplete.min.js' type="javascript"></script>
+<script src='app/js/jquery.min.js'></script>
+<script src='app/js/jquery-ui-autocomplete.js'></script>
+<script src='app/js/jquery-ui-autocomplete.js'></script>
+<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
 
 
 </body>
