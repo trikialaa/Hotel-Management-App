@@ -12,10 +12,10 @@
 <head>
     <meta charset="UTF-8">
     <title>CheckIn</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="app/css/font-awesome.css">
+    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="app/css/icon.css">
 
     <link rel="stylesheet" href="app/css/form_check_in.css">
 
@@ -145,16 +145,11 @@
     </div>
     </div> <!-- /.form-group -->
 </form>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type="javascript"></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery-ui-autocomplete.js' type="javascript"></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.js' type="javascript"></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.min.js' type="javascript"></script>
-
-
-
 <script  src="app/js/form_check_in.js"></script>
-
-
+<script src='app\js\jquery.min.js' type="javascript"></script>
+<script src='app\js\jquery-ui-autocomplete.js' type="javascript"></script>
+<script src='app\js\jquery-ui-autocomplete.js' type="javascript"></script>
+<script src='app\js\jquery.select-to-autocomplete.min.js' type="javascript"></script>
 
 
 </body>
