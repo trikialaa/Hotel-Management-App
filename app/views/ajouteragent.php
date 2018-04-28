@@ -16,6 +16,16 @@
     <h2 class="heading">Ajouter agent</h2>
 
     <div class="controls">
+        <input type="text" id="nom" class="floatLabel" name=nom" required>
+        <label for="nom">Nom</label>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="prenom" class="floatLabel" name="prenom" required>
+        <label for="prenom">Prenom </label>
+    </div>
+
+    <div class="controls">
         <input type="text" id="nameAgent" class="floatLabel" name="nameAgent" required>
         <label for="nameAgent">Login </label>
     </div>
@@ -25,6 +35,8 @@
         <input type="password" id="mdp" class="floatLabel" name="mdp" required>
         <label for="mdp">Mot de passe </label>
     </div>
+
+
     <br><br>
 
     <div>

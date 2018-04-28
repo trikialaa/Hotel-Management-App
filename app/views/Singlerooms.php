@@ -71,22 +71,6 @@ include("navbar.php");
 
             </table>
 
-            <div id="reservation_dialogue" class="modal">
-
-                <div class="modal-content">
-                    <span id="spanclose" class="close">&times;</span>
-
-                    <form id="resform" method="post">
-                        <input type="date" placeholder="date d'arrivée">
-                        <input type="date" placeholder="date de départ">
-                        <button type="submit" name="submitres"  >confirmer</button>
-                        <button type="reset" onclick="annulerreservation()">annuler</button>
-                    </form>
-
-                </div>
-
-            </div>
-
 
             <div id="checkin_dialogue" class="modal">
                 <div class="modal-content">
