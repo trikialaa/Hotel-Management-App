@@ -1,7 +1,12 @@
 
 <?php require 'app/php/controlClass/Singlerooms.php';?>
 
-    <!DOCTYPE html>
+<?php
+include("navbar.php");
+?>
+
+
+<!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
@@ -10,13 +15,17 @@
             <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
             <script>
                 var rooms_js=<?php echo json_encode(getRooms()); ?>;
+                var date_in = "<?php echo $_GET['date_in'] ?>";
+                var date_out = "<?php echo $_GET['date_out'] ?>";
+
             </script>
         </head>
         <body>
 
         <div id="parentpage">
 
-            <form method="get"> <div id="dates">
+            <form method="get">
+                <div id="dates">
                 <input placeholder="Check-in date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_in" name ="date_in">
 
                 <input placeholder="Check-out date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_out" name="date_out">
@@ -78,8 +87,8 @@
                     <form id="checkinform" method="post">
                         <input type="text" placeholder="nom" name="nom">
                         <input type="text" placeholder="cin" name="cin">
-                        <input type="date" placeholder="date d'arrivée" name ="datearr">
-                        <input type="date" placeholder="date de départ" name="datedep">
+                        <input type="date" placeholder="date d'arrivée" id="date_in_form">
+                        <input type="date" placeholder="date de départ" id="date_out_form">
 
                         <input type='hidden' id="roomnumberc" name="roomnumberc" value=""/>
 

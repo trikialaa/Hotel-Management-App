@@ -10,6 +10,16 @@
 session_start();
     $bdrm = BDRequestManager::getInstance();
 
+$reponse = $bdrm->checkAdmin($_POST['username'], $_POST['password']);//verification si le login correspend à un admin
+
+if ($reponse) {
+
+    $_SESSION['admin'] = true;
+    $_SESSION['logged_in'] = true;
+    $_SESSION["Prenom"] = "admin";
+    header("Location: /home");
+} else { // on verifie si le login correspend à un agent
+
     if($bdrm->checkAgentLogin($_POST['username'])){
         $response = $bdrm->checkAgent($_POST['username'],$_POST['password']);
 
@@ -18,6 +28,7 @@ session_start();
             $_SESSION['id'] = $response->AGENTID;
             $_SESSION['Nom'] = $response->LastName;
             $_SESSION['Prenom'] = $response->FirstName;
+            $_SESSION['admin'] = false;
 
 
             $_SESSION['logged_in'] = true;
@@ -26,7 +37,7 @@ session_start();
         }else{
             echo "ERROR !!  WRONG PASSWORD ";
         }
-    }
-    else{
+    } else {
         echo "Wrong LOGIN NAME !";
     }
+}
