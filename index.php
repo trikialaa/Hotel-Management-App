@@ -29,6 +29,9 @@
             case '/consomation':
                 require 'app/views/consommation.php';
                 break;
+            case '/ajouteragent':
+                require 'app/views/ajouteragent.php';
+                break;
             default:
                 header('HTTP/1.0 404 Not Found');
                 require 'app/views/404.php';
