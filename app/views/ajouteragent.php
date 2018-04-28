@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>ajouter agent</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="app/css/font-awesome.css">
+    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="app/css/icon.css">
 
     <link rel="stylesheet" href="app/css/form_check_in.css">
 </head>
@@ -14,22 +14,31 @@
 
 <form>
     <h2 class="heading">Ajouter agent</h2>
-    <input type="text" placeholder="login agent" class="floatLabel" required>
-    <input type="password" placeholder="mot de passe agent" class="floatLabel" required>
+
+    <div class="controls">
+        <input type="text" id="nameAgent" class="floatLabel" name="nameAgent" required>
+        <label for="nameAgent">Login </label>
+    </div>
+
+
+    <div class="controls">
+        <input type="password" id="mdp" class="floatLabel" name="mdp" required>
+        <label for="mdp">Mot de passe </label>
+    </div>
+    <br><br>
+
     <div>
         <button type="submit" class="col-1-4">confirmer</button>
         <button type="reset" class="col-1-4">annuler</button>
     </div>
 </form>
 
-
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type="javascript"></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery-ui-autocomplete.js'
-        type="javascript"></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.js'
-        type="javascript"></script>
-<script src='http://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.min.js'
-        type="javascript"></script>
+<script src='app/js/jquery-1.7.2.min.js'></script>
+<script src="app/js/form_check_in.js"></script>
+<script src='app/js/jquery.min.js'></script>
+<script src='app/js/jquery-ui-autocomplete.js'></script>
+<script src='app/js/jquery-ui-autocomplete.js'></script>
+<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
 
 
 </body>

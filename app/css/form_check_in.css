@@ -107,6 +107,7 @@ h2.heading {
 .controls input[type="number"],
 .controls input[type="date"],
 .controls input[type="tel"],
+.controls input[type="password"],
 .controls textarea,
 .controls button,
 .controls p,
@@ -129,7 +130,8 @@ h2.heading {
     transition: all 0.3s;
 }
 
-.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="text"]:focus,
+.controls input[type="text"]:hover,
 .controls input[type="email"]:focus,
 .controls input[type="email"]:hover,
 .controls input[type="number"]:focus,
@@ -138,6 +140,8 @@ h2.heading {
 .controls input[type="date"]:hover,
 .controls input[type="tel"]:focus,
 .controls input[type="tel"]:hover,
+.controls input[type="password"]:hover,
+.controls input[type="password"]:focus,
 .controls textarea:focus,
 .controls textarea:hover,
 .controls button:focus,
@@ -148,7 +152,8 @@ h2.heading {
     border-color: #9FB1C1;
 }
 
-.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="text"]:focus + label,
+.controls input[type="text"]:hover + label,
 .controls input[type="email"]:focus + label,
 .controls input[type="email"]:hover + label,
 .controls input[type="number"]:focus + label,
@@ -157,6 +162,8 @@ h2.heading {
 .controls input[type="date"]:hover + label,
 .controls input[type="tel"]:focus + label,
 .controls input[type="tel"]:hover + label,
+.controls input[type="password"]:focus + label,
+.controls input[type="password"]:hover + label,
 .controls textarea:focus + label,
 .controls textarea:hover + label,
 .controls button:focus + label,
