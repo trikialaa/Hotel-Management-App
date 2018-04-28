@@ -11,7 +11,7 @@ session_start();
     <a class="link" href="#">Check-out</a>
     <?php
     if ($_SESSION['admin'] === true) {
-        echo('<a class="link" href="#">Ajouter Agent</a>'); //ajout du bouton si admin connecté
+        echo('<a class="link" href="http://localhost:3000/ajouteragent">Ajouter Agent</a>'); //ajout du bouton si admin connecté
     }
     ?>
     <a class="user" href="#">Bienvenue <?php echo $_SESSION["Prenom"]; ?></a>
