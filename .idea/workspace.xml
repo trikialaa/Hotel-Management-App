@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/css/welcome.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/css/navbarstyle.css" afterPath="$PROJECT_DIR$/app/css/navbarstyle.css" />
+      <change beforePath="$PROJECT_DIR$/app/css/homepage.css" afterPath="$PROJECT_DIR$/app/css/homepage.css" />
+      <change beforePath="$PROJECT_DIR$/app/views/home.php" afterPath="$PROJECT_DIR$/app/views/home.php" />
     </list>
     <ignored path="C:\xampp\htdocs\GL2WebProject\.idea\shelf/" />
     <ignored path="C:\Users\GMI\PhpstormProjects\schoolproject\GL2WebProject\.idea\shelf/" />
@@ -39,8 +41,8 @@
       <file leaf-file-name="CheckInForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/CheckInForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1009">
-              <caret line="130" column="12" lean-forward="true" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+            <state relative-caret-position="245">
+              <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -50,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/ajouteragent.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="861">
-              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+              <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               <folding>
                 <element signature="e#2104#2111#1#HTML" expanded="true" />
                 <element signature="e#2725#2732#1#HTML" expanded="true" />
@@ -69,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="232">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -82,18 +84,18 @@
       <file leaf-file-name="homepage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="welcome.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/welcome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="-566">
+              <caret line="189" column="32" lean-forward="true" selection-start-line="189" selection-start-column="32" selection-end-line="189" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -103,16 +105,16 @@
         <entry file="file://$PROJECT_DIR$/app/views/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbarstyle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbarstyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
+            <state relative-caret-position="63">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -129,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_check_in.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/form_check_in.js">
+      <file leaf-file-name="CheckCIN.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/CheckCIN.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="210">
+              <caret line="10" column="60" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="10" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -160,7 +162,6 @@
       <find>arr</find>
       <find>type</find>
       <find>headi</find>
-      <find>tel</find>
       <find>arrive</find>
       <find>city</find>
       <find>.</find>
@@ -171,9 +172,13 @@
       <find>fo</find>
       <find>input</find>
       <find>home</find>
-      <find>b</find>
-      <find>nom</find>
       <find>text</find>
+      <find>nom</find>
+      <find>tel</find>
+      <find>b</find>
+      <find>div</find>
+      <find>id</find>
+      <find>#</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -238,10 +243,11 @@
         <option value="$PROJECT_DIR$/app/views/CheckInForm.php" />
         <option value="$PROJECT_DIR$/app/css/form_check_in.css" />
         <option value="$PROJECT_DIR$/app/views/ajouteragent.php" />
-        <option value="$PROJECT_DIR$/app/css/homepage.css" />
-        <option value="$PROJECT_DIR$/app/views/home.php" />
         <option value="$PROJECT_DIR$/app/views/navbar.php" />
         <option value="$PROJECT_DIR$/app/css/navbarstyle.css" />
+        <option value="$PROJECT_DIR$/app/css/homepage.css" />
+        <option value="$PROJECT_DIR$/app/css/welcome.css" />
+        <option value="$PROJECT_DIR$/app/views/home.php" />
       </list>
     </option>
   </component>
@@ -257,7 +263,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="width" value="976" />
+    <option name="width" value="973" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -293,6 +299,12 @@
               <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
@@ -521,7 +533,7 @@
       <workItem from="1524353741051" duration="880000" />
       <workItem from="1524492585470" duration="2583000" />
       <workItem from="1524603003906" duration="7222000" />
-      <workItem from="1524645406485" duration="16714000" />
+      <workItem from="1524645406485" duration="22603000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -684,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524951885965</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="some design stuff">
+      <created>1524953377469</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1524953377469</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76568000" />
+    <option name="totallyTimeSpent" value="82457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -785,7 +804,8 @@
     <MESSAGE value="j'ai telecharger les fichier css et jquery dont on a besoin ( pour le script des formulaires )" />
     <MESSAGE value="ajouter agent css" />
     <MESSAGE value="some design sttaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="some design sttaf" />
+    <MESSAGE value="some design stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="some design stuff" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -794,14 +814,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -982,14 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/CheckCIN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -1019,9 +1023,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1524953328487" expanded="true" signature="64891:64907" ph="..." />
-            <marker date="1524953328487" expanded="true" signature="64891:64925" ph="..." />
-            <marker date="1524953328487" expanded="true" signature="64891:64938" ph="..." />
+            <marker date="1524959229114" expanded="true" signature="65923:65939" ph="..." />
+            <marker date="1524959229114" expanded="true" signature="65923:65957" ph="..." />
+            <marker date="1524959229114" expanded="true" signature="65923:65970" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1045,23 +1049,7 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1069,26 +1057,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <element signature="e#2104#2111#1#HTML" expanded="true" />
-            <element signature="e#2725#2732#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/CheckInForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="130" column="12" lean-forward="true" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1096,7 +1065,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/ajouteragent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1111,8 +1080,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
+        <state relative-caret-position="63">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/CheckCIN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="60" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="10" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="e#2104#2111#1#HTML" expanded="true" />
+            <element signature="e#2725#2732#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/CheckInForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-566">
+          <caret line="189" column="32" lean-forward="true" selection-start-line="189" selection-start-column="32" selection-end-line="189" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
