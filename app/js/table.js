@@ -17,7 +17,15 @@
 
         btn2.onclick = function () {
             dialogcheckin.style.display = "block";
+            var chambreid = btn2.parentElement.innerText;
+            console.log(chambreid);
+
+            document.getElementById("chambreid").value = chambreid;
+
+
+
         };
+
 
         var span2 = document.getElementById("spanclose2");
 
@@ -29,9 +37,9 @@
             if (event.target == dialogcheckin) {
                 dialogcheckin.style.display = "none";
                 dialogres.style.display = "none";
+
             }
         }
-
 
 
         var btn3 = document.createElement('input');
@@ -86,7 +94,7 @@
 
             })
             cells[i].addEventListener("mouseleave", function () {
-                btn1.visibility = "hidden";
+
                 btn2.visibility = "hidden";
                 btn3.visibility = "hidden";
 

@@ -175,24 +175,24 @@ include("navbar.php");
             <input type="text" id="country" class="floatLabel" name="country">
             <label for="country">Pays</label>
         </div>
-        <p align="left">
-            <b> <i class="material-icons">home</i> &nbsp;&nbsp; Choisir une chambre : </b>
-            <br>
-            <br>
-            <div class="controls">
-                <a href="/singlerooms">
-        <p class="floatLabel" size="15">Map chambres</p> </a>
+
+
+        <div class="controls">
+            <input readonly type="text" id="chambreid" class="floatLabel" name="chambreid">
+            <label for="chambreid">Numéro de chambre</label>
         </div>
 
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
         <div>
             <button type="submit" value="Submit" class="col-1-4">Valider</button>
         </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
         </div> <!-- /.form-group -->
         </form>
 
