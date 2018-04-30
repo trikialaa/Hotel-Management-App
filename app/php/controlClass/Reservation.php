@@ -1,24 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: olfa
- * Date: 19/04/2018
- * Time: 20:06
- */
 
+require 'BDRequestManager.php';
+
+$bdrm = BDRequestManager::getInstance();
 if (isset($_POST['submit'])) {
-    try{
-        $db = new PDO('mysql:host=localhost;dbname=basehotel','root','');
-        $db->query("use basehotel");
-        $req=$db->prepare('INSERT INTO reservation(CIN, Numerotel, Date_arrive, Date_depart, TypeChambre) VALUES (?,?,?,?,?)') ;
-        $req->execute(array($_POST['cin'],$_POST['phone'],$_POST['arrive'],$_POST['depart'],$_POST['type']));
+    $rst = $bdrm->addClientToBdForReservation($_POST['nom'], $_POST['prenom'], $_POST['idtype'], $_POST['idnumber']);
+    $response = $bdrm->createReservation($_POST['roomnumber'], $_POST['datearr'], $_POST['datedepp']);
 
-    }
-    catch (PDOException $e)
-    {
-        print"Erreur : ".$e->getMessage();
-        die();
-    }
 
 
 }
