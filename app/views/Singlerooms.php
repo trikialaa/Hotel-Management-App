@@ -21,7 +21,7 @@ include("navbar.php");
     <link rel="stylesheet" type="text/css" href="app/css/table.css">
     <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
     <script>
-        var rooms_js=<?php echo json_encode(getRooms()); ?>;
+        var rooms_js =<?php echo json_encode(getRooms()); ?>;
         var date_in = "<?php echo $_GET['date_in'] ?>";
         var date_out = "<?php echo $_GET['date_out'] ?>";
 
@@ -33,11 +33,13 @@ include("navbar.php");
 
     <form method="get">
         <div id="dates">
-            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_in" name ="date_in">
+            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                   id="date_in" name="date_in">
 
-            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_out" name="date_out">
+            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                   id="date_out" name="date_out">
 
-            <input type="submit" onclick='' value="Rafraichir" name ="refresh"/>
+            <input type="submit" onclick='' value="Rafraichir" name="refresh"/>
 
 
         </div>
@@ -175,24 +177,24 @@ include("navbar.php");
     <input type="text" id="country" class="floatLabel" name="country">
     <label for="country">Pays</label>
 </div>
-<p align="left">
-    <b> <i class="material-icons">home</i> &nbsp;&nbsp; Choisir une chambre : </b>
-    <br>
-    <br>
-    <div class="controls">
-        <a href="/singlerooms">
-<p class="floatLabel" size="15">Map chambres</p> </a>
+
+
+<div class="controls">
+    <input readonly type="text" id="chambreid" class="floatLabel" name="chambreid">
+    <label for="chambreid">Numéro de chambre</label>
 </div>
 
-</div>
-
-<br>
-<br>
-<br>
-<br>
 <div>
     <button type="submit" value="Submit" class="col-1-4">Valider</button>
 </div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
 </div> <!-- /.form-group -->
 </form>
 
