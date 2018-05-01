@@ -13,11 +13,12 @@ include("navbar.php");
 
     <link rel="stylesheet" href="app/css/form_check_in.css">
 </head>
+
 <body>
 
 
 <form>
-    <h2 class="heading">Ajouter agent</h2>
+    <h3 class="heading">Ajouter agent</h3>
 
     <div class="controls">
         <input type="text" id="nom" class="floatLabel" name=nom" required>
@@ -44,8 +45,8 @@ include("navbar.php");
     <br><br>
 
     <div>
-        <button type="submit" class="col-1-4">confirmer</button>
-        <button type="reset" class="col-1-4">annuler</button>
+        <button type="submit" class="col-1-4" class="cancel_btn">confirmer</button>
+        <button type="reset" class="col-1-4" class="cancel_btn">annuler</button>
     </div>
 </form>
 

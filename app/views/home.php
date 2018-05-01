@@ -13,16 +13,20 @@
 
 </head>
 <body>
-<?php
-include("navbar.php");
-?>
+<header class="header">
+    <?php
+    include("navbar.php");
+    ?>
+</header>
 <div class="box">
-    <h1>Bienvenue</h1>
+    <h3 style="font-family: 'Avantgard'">Bienvenue</h3>
 </div>
-<footer>
+
+<footer class="footer">
     <div>
-        <p align="left"><i class="material-icons">home</i> adresse </p>
-        <p align="right"><i class="material-icons">phone</i> Phone </p>
+        <p align="left" style="color: white"><i class="material-icons">home</i> adresse </p>
+        <p align="right" style="color: white"><i class="material-icons">phone</i> Phone </p>
+
     </div>
 </footer>
 

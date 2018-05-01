@@ -1,6 +1,49 @@
+:root {
+    --footer-height: 5em;
+    --header-height: 5em;
+
+}
+
+
+
 html {
     height: 100%;
+    /*  background: #8495a5;*/
+    color: #333;
+    font: 300 100%/1.5 'Open Sans', sans-serif;
 }
+
+.header {
+    height:  var(--header-height);
+    padding: 0.5em;
+}
+.box {
+
+    min-height: calc(100vh - var(--header-height) + var(--footer-height));
+    /* background: rgba(255,255,255, 0.5);*/
+}
+footer{
+    background: #c03000;
+}
+.footer {
+    height: var(--footer-height);
+    padding: 0.5em;
+
+
+
+}
+
+.header {
+    height: 5em;
+    padding: 0.5em;
+}
+
+
+.footer {
+    height: 5em;
+    padding: 0.5em;
+}
+
 
 body {
     min-height: 100%;

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
-    <link rel="stylesheet" type="text/css" href="app/css/login.css">
-    <link rel="stylesheet" href="app/css/navbarstyle.css">
+    <title>Systéme de gestion d'un hotel</title>
+    <link rel="stylesheet" href="app\css\login.css">
 </head>
+
 <body>
 
-<div class="bg-img">
-
-    <form action="app/php/controlClass/login.php" method="POST">
-        <div class="container1">
+<div id="box1" class="box blurred-bg tinted">
+    <div class="content">
+        <h1>Systéme de gestion </h1>
+        <p class="related">Royal Venus</p>
+        <div>
             <div class="img_container">
-                <img src="app/img/img_avatar.png" alt="Avatar" class="avatar">
+                <img src="app\img\logo_black.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
@@ -23,17 +25,21 @@
                 <label for="password"><b>Password</b></label>
                 <input id="password" type="password" placeholder="Enter Password" name="password" required>
 
-                <button type="submit">Login</button>
+                <div class="container">
+                    <button type="submit" class="cancel_btn">Login</button>
+                    <button type="button" class="cancel_btn">Cancel</button>
+                </div>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
             </div>
 
-            <div class="container">
-                <button type="button" class="cancel_btn">Cancel</button>
-            </div>
+
         </div>
-    </form>
+
+
+
+    </div>
 </div>
 </body>
 </html>
