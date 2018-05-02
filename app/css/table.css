@@ -2,7 +2,7 @@
     cursor: context-menu;
     background: -moz-linear-gradient(top, #67ff5e, #00e925);
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#67ff5e), to(#00e925));
-   text-align: center;
+    text-align: center;
     padding: 5px;
 }
 .orange{

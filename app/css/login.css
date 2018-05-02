@@ -1,7 +1,69 @@
-/* Bordered form */
-form {
-    border: 3px solid #84642c;
+body {
+    background: #f6f3d0;
 }
+.box {
+    width: 800px;
+    height: 800px;
+    left: -webkit-calc( 50% - 250px );
+    top: 20%;
+    position: relative ;
+    margin-left:-10%;
+    border-radius: 5px;
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    transition: box-shadow .3s ease;
+    background: #d0cdb0;
+}
+.box:active {
+    cursor: move;
+    -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+    margin: auto;
+}
+
+h1, h2, a, p {
+    color: white;
+    font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+    color: black;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    font-size: 14px;
+}
+
+p {
+    margin: 20px;
+}
+p.related {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+}
+p.related a {
+    font-weight: 700;
+    text-decoration: none;
+}
+p.related a:hover {
+    text-decoration: underline;
+}
+/* container */
+/* Bordered form */
+
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -9,14 +71,14 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #84642c;
+    border: 1px solid #224c60;
     box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 button {
-    background-color: #2b2512;
-    color: #d0b861;
+    background-color: #c03000;
+    color: #ffffff;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -32,8 +94,9 @@ button:hover {
 /* Extra style for the cancel button (red) */
 .cancel_btn {
     width: auto;
-    padding: 10px 18px;
-    background-color: #84642c;
+    padding: 10px 40px;
+    background-color: #c03000;
+    color: white;
 }
 
 /* Center the avatar image inside this container */
@@ -71,25 +134,9 @@ span.psw {
     }
 }
 
-.container1 {
-    position: absolute;
-    right: 0;
-    margin: 20px;
-    max-width: 300px;
-    padding: 16px;
-    background-color: #d0b861;
-}
 
-.bg-img {
 
-    background-color: black;
-    background-image: url("/app/img/logo.png");
-    min-height: 600px;
 
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 * {
     box-sizing: border-box;
