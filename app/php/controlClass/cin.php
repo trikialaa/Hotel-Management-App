@@ -12,10 +12,7 @@
 
     $response = $bdrm->isClientInBd("CIN",$_POST['cin']);
 
-    if ($response >=0 )  {
-        echo "AVAILABLE" ;
-    }else{
-        echo "NOT AVAILBALBE";
-    }
+
+echo $response;
 
 

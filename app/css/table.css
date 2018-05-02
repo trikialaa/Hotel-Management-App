@@ -89,5 +89,8 @@ dialog{
     transition:2s ;
 }
 
+#parentpage {
+    display: inline-grid;
+}
 
 
