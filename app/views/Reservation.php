@@ -80,7 +80,7 @@ include("navbar.php");
     </div>
 
 </form>
-<script src="controlClass\Reservation"></script>
+<script src="app/php/controlClass/Reservation.php"></script>
 
 </body>
 </html>
