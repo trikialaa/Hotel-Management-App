@@ -11,12 +11,9 @@ include("navbar.php");
 <head>
     <meta charset="UTF-8">
     <title>single rooms</title>
-
     <link rel="stylesheet" href="app/css/font-awesome.css">
     <link href='app/css/css.css' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="app/css/icon.css">
-
     <link rel="stylesheet" href="app/css/form_check_in.css">
     <link rel="stylesheet" type="text/css" href="app/css/table.css">
     <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
@@ -26,6 +23,12 @@ include("navbar.php");
         var date_out = "<?php echo $_GET['date_out'] ?>";
 
     </script>
+    <style type="text/css">
+        input.button {
+            background: #c03000;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -39,7 +42,7 @@ include("navbar.php");
             <input placeholder="Check-out date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
                    id="date_out" name="date_out">
 
-            <input type="submit" onclick='' value="Rafraichir" name="refresh"/>
+            <input type="submit" onclick='' value="Rafraichir" name="refresh" class="button"/>
 
 
         </div>
