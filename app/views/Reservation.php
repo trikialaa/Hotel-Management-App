@@ -1,10 +1,13 @@
 <?php
+
 include("navbar.php");
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <title>Reservation</title>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -62,7 +65,7 @@ include("navbar.php");
         <div class="col-1-4 col-1-4-sm">
             <div class="controls">
                 <b> <i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ </b>
-                <input type="date" id="$datedepp" class="floatLabel" name="$datedepp"
+                <input type="date" id="datedepp" class="floatLabel" name="datedepp"
                        value="<?php echo date('Y-m-d'); ?>"/>
 
             </div>
@@ -70,7 +73,7 @@ include("navbar.php");
     </div>
     <div class="controls">
         <b> <i class="fa fa-home"></i>&nbsp;&nbsp;Room Number</b>
-        <input type="number" id="roomnumber" nom="roomnumber" placeholder="Room Number" required>
+        <input type="number" id="roomnumber" name="roomnumber" placeholder="Room Number" required>
     </div>
     <div class="grid">
         <button type="submit" value="Submit" class="col-1-4">Valider</button>
