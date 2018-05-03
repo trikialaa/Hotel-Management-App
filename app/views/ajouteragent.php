@@ -17,7 +17,7 @@ include("navbar.php");
 
 
 <form>
-    <h2 class="heading">Ajouter agent</h2>
+    <h2 class="heading">Ajouter Agent</h2>
 
     <div class="controls">
         <input type="text" id="nom" class="floatLabel" name=nom" required>
@@ -28,10 +28,17 @@ include("navbar.php");
         <input type="text" id="prenom" class="floatLabel" name="prenom" required>
         <label for="prenom">Prenom </label>
     </div>
-
     <div class="controls">
-        <input type="text" id="nameAgent" class="floatLabel" name="nameAgent" required>
-        <label for="nameAgent">Login </label>
+        <input type="text" id="adresse" class="floatLabel" name="adresse" required>
+        <label for="adresse">Adresse </label>
+    </div>
+    <div class="controls">
+        <input type="text" id="tel" class="floatLabel" name="tel" required>
+        <label for="tel">Numero Téléphone </label>
+    </div>
+    <div class="controls">
+        <input type="text" id="login" class="floatLabel" name="login" required>
+        <label for="login">Login </label>
     </div>
 
 
@@ -55,7 +62,7 @@ include("navbar.php");
 <script src='app/js/jquery-ui-autocomplete.js'></script>
 <script src='app/js/jquery-ui-autocomplete.js'></script>
 <script src='app/js/jquery.select-to-autocomplete.min.js'></script>
-
+<script src="app/php/controlClass/Ajout_Agent.php"></script>
 
 </body>
 </html>
