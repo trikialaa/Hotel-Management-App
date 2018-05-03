@@ -16,11 +16,11 @@ include("navbar.php");
 <body>
 
 
-<form>
+<form method="POST" action="app/php/controlClass/Ajout_Agent.php">
     <h2 class="heading">Ajouter Agent</h2>
 
     <div class="controls">
-        <input type="text" id="nom" class="floatLabel" name=nom" required>
+        <input type="text" id="nom" class="floatLabel" name="nom" required>
         <label for="nom">Nom</label>
     </div>
 
