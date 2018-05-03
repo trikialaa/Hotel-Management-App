@@ -16,4 +16,6 @@
     echo "<tr><td>".'<a href="http://localhost:3000/checkcin">/checkcin</a>'."<td>".'views/CheckCIN.php'."</td></tr>";
     echo "<tr><td>".'<a href="http://localhost:3000/consomation">/consomation</a>'."<td>".'views/consommation.php'."</td></tr>";
     echo "<tr><td>".'<a href="http://localhost:3000/home">/home</a>'."<td>".'views/consommation.php'."</td></tr>";
+echo "<tr><td>" . '<a href="http://localhost:3000/ajouteragent">/ajouteragent</a>' . "<td>" . 'views/ajouteragent.php' . "</td></tr>";
     echo '</table></div>';
+
