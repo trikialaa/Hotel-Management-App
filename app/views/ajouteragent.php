@@ -29,13 +29,14 @@ include("navbar.php");
         <label for="prenom">Prenom </label>
     </div>
     <div class="controls">
-        <input type="text" id="adresse" class="floatLabel" name="adresse" required>
-        <label for="adresse">Adresse </label>
-    </div>
-    <div class="controls">
         <input type="text" id="tel" class="floatLabel" name="tel" required>
         <label for="tel">Numero Téléphone </label>
     </div>
+    <div class="controls">
+        <input type="text" id="adresse" class="floatLabel" name="adresse" required>
+        <label for="adresse">Adresse </label>
+    </div>
+
     <div class="controls">
         <input type="text" id="login" class="floatLabel" name="login" required>
         <label for="login">Login </label>
