@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 ?>
 <div id="navbar">
 
@@ -14,6 +14,7 @@ session_start();
         echo('<a class="link" href="http://localhost:3000/ajouteragent">Ajouter Agent</a>'); //ajout du bouton si admin connecté
     }
     ?>
+    <a class="user" href="login">Logout</a>
     <a class="user" href="#">Bienvenue <?php echo $_SESSION["Prenom"]; ?></a>
     <link rel="stylesheet" type="text/css" href="app/css/navbarstyle.css" media="screen" />
 </div>

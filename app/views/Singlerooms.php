@@ -1,9 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION["logged_in"])) header('Location:login');
+include("navbar.php");
+
+?>
 
 <?php require 'app/php/controlClass/Singlerooms.php';?>
-
-<?php
-include("navbar.php");
-?>
 
 
 <!DOCTYPE html>

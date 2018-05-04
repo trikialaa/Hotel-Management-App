@@ -1,3 +1,10 @@
+<?php
+session_start();
+session_destroy(); //on doit supprimer la session si on est redirigé vers login (botuon logout)
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -19,25 +26,24 @@
                 <img src="app\img\logo_black.png" alt="Avatar" class="avatar">
             </div>
             <form action="app\php\controlClass\login.php" method="post">
-            <div class="container">
-                <label for="username"><b>Username</b></label>
-                <input id="username" type="text" placeholder="Enter Username" name="username" required>
-
-                <label for="password"><b>Password</b></label>
-                <input id="password" type="password" placeholder="Enter Password" name="password" required>
-
                 <div class="container">
-                    <button type="submit" class="cancel_btn">Login</button>
-                    <button type="button" class="cancel_btn">Cancel</button>
+                    <label for="username"><b>Username</b></label>
+                    <input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input id="password" type="password" placeholder="Enter Password" name="password" required>
+
+                    <div class="container">
+                        <button type="submit" class="cancel_btn">Login</button>
+                        <button type="button" class="cancel_btn">Cancel</button>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
                 </div>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
             </form>
 
         </div>
-
 
 
     </div>

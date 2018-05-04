@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+if (!isset($_SESSION["logged_in"])) header('Location:login'); //verification si admin connecté
 include("navbar.php");
 
 ?>

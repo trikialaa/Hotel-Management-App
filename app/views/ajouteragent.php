@@ -1,5 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION["logged_in"]) || !isset($_SESSION["admin"]) || !$_SESSION["admin"]) header('Location:login');
 include("navbar.php");
+
 ?>
 
 <!DOCTYPE html>

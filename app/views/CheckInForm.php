@@ -1,11 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Zeineb
- * Date: 4/18/2018
- * Time: 3:00 PM
- */
+session_start();
+if (!isset($_SESSION["logged_in"])) header('Location:login');
 ?>
+
 <!DOCTYPE html>
 <html lang="en" >
 

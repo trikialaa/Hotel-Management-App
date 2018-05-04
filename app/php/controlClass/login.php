@@ -17,6 +17,7 @@ if ($reponse) {
     $_SESSION['admin'] = true;
     $_SESSION['logged_in'] = true;
     $_SESSION["Prenom"] = "admin";
+
     header("Location: /home");
 } else { // on verifie si le login correspend à un agent
 
