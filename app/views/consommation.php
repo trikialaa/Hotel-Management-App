@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="app/css/form_check_in.css">
 </head>
 <body>
-<form action="" id="formconsommation" ><!--formulaire consommation-->
-    <h2 class="heading">Consommation</h2>
+
+<h2 class="heading">Consommation</h2>
     <form action="" id="formconsommation" ><!--formulaire consommation-->
 
 

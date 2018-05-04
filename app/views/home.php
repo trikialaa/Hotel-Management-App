@@ -19,7 +19,7 @@
     ?>
 </header>
 <div class="box">
-    <h3 style="font-family: 'Avantgard'">Bienvenue</h3>
+    <h1>Bienvenue</h1>
 </div>
 
 <footer class="footer">
