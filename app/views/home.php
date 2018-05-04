@@ -9,10 +9,11 @@ if (!isset($_SESSION["logged_in"])) header('Location:login');
     <title>Home page</title>
     <link rel="stylesheet" href="app/css/homepage.css" type="text/css">
     <link rel="stylesheet" href="app/css/welcome.css" type="text/css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="app/css/font-awesome.css">
+    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="app/css/icon.css">
 
     <link rel="stylesheet" href="app/css/form_check_in.css">
 
