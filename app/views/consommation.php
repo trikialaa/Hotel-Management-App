@@ -1,49 +1,17 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: olfa
- * Date: 19/04/2018
- * Time: 20:10
- */
-?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>ajouter consommation</title>
+    <title>Ajouter Consommation</title>
+    <link rel="stylesheet" href="app/css/font-awesome.css">
+    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="app/css/icon.css">
+    <link rel="stylesheet" href="app/css/form_check_in.css">
 </head>
 <body>
 
-<h1>consommation</h1>
-<form action="" id="formconsommation" ><!--formulaire consommation-->
-    <input plac<?php
-    /**
-     * Created by PhpStorm.
-     * User: olfa
-     * Date: 19/04/2018
-     * Time: 20:10
-     */
-    ?>
-
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>ajouter consommation</title>
-        <link rel="stylesheet" href="app/css/font-awesome.css">
-        <link href='app/css/css.css' rel='stylesheet' type='text/css'>
-
-        <link rel="stylesheet" href="app/css/icon.css">
-
-        <link rel="stylesheet" href="app/css/form_check_in.css">
-
-    </head>
-    <body>
-
-    <h3 class="heading">Consommation</h3>
+<h2 class="heading">Consommation</h2>
     <form action="" id="formconsommation" ><!--formulaire consommation-->
 
 
@@ -77,22 +45,6 @@
     <script src='app/js/jquery-ui-autocomplete.js'></script>
     <script src='app/js/jquery.select-to-autocomplete.min.js'></script>
 
-
-    </body>
-    </html>eholder="n° chambre" type="text" id="numchambre">
-    <br>
-    <select id="typeconsommation">
-        <option>mekla fel bit</option>
-        <option>café/bar</option>
-        <option>ironing/washing clothes</option>
-    </select>
-    <br>
-    <input placeholder="tarif">
-    <br>
-    <button id="cancel" type="reset"  >cancel</button>
-    <br>
-    <button id="confirm" type="submit" >confirmer</button>
-</form>
 
 </body>
 </html>

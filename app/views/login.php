@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 
+
 <head>
     <meta charset="UTF-8">
     <title>Systéme de gestion d'un hotel</title>
@@ -17,7 +18,7 @@
             <div class="img_container">
                 <img src="app\img\logo_black.png" alt="Avatar" class="avatar">
             </div>
-
+            <form action="app\php\controlClass\login.php" method="post">
             <div class="container">
                 <label for="username"><b>Username</b></label>
                 <input id="username" type="text" placeholder="Enter Username" name="username" required>
@@ -33,7 +34,7 @@
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
             </div>
-
+            </form>
 
         </div>
 

@@ -2,6 +2,7 @@
 
 html {
     line-height: 1;
+    background: #fffcd8;
 }
 
 ol, ul {
@@ -72,8 +73,8 @@ h2.heading {
     text-transform: uppercase;
     font-weight: 300;
     text-align: left;
-    color: #506982;
-    border-bottom: 1px solid #506982;
+    color: #d55302;
+    border-bottom: 1px solid #b9121b;
     padding-bottom: 3px;
     margin-bottom: 20px;
 }
@@ -200,7 +201,7 @@ h2.heading {
 
 button {
     cursor: pointer;
-    background-color: #1b3d4d;
+    background-color: #c03000;
     border: none;
     color: #fff;
     padding: 12px 0;
@@ -208,7 +209,7 @@ button {
 }
 
 button:hover {
-    background-color: #224c60;
+    background-color: #d55302;
 }
 
 .clear:after {
