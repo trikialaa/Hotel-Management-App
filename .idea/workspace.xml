@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="Removed un">
-      <change afterPath="$PROJECT_DIR$/db/bdhotel.sql" afterDir="false" />
+    <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/slider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/modalForm.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/welcome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/bg_pattern.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/CheckCIN.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/CheckCIN.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/CheckInForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/CheckInForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Singlerooms.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Singlerooms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/ajouteragent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/ajouteragent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/consommation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/consommation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/facture.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/facture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/img_avatar.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/bdd_prototype" beforeDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\GL2WebProject\.idea\shelf/" />
     <ignored path="C:\Users\GMI\PhpstormProjects\schoolproject\GL2WebProject\.idea\shelf/" />
@@ -60,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="238">
               <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
@@ -85,11 +73,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="289">
+              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/slider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,15 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
               <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckInForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/CheckInForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -139,22 +140,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consommation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/consommation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -187,6 +179,7 @@
       <find>form_check_in</find>
       <find>f</find>
       <find>jque</find>
+      <find>jpe</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -206,8 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/router/views/consommation.php" />
-        <option value="$PROJECT_DIR$/router/public/php/dataClass/ElementFacture.php" />
         <option value="$PROJECT_DIR$/router/public/php/dataClass/Agent.php" />
         <option value="$PROJECT_DIR$/router/public/php/dataClass/Chambre.php" />
         <option value="$PROJECT_DIR$/router/public/php/dataClass/Client.php" />
@@ -254,9 +245,11 @@
         <option value="$PROJECT_DIR$/app/views/CheckInForm.php" />
         <option value="$PROJECT_DIR$/app/views/consommation.php" />
         <option value="$PROJECT_DIR$/app/views/facture.php" />
-        <option value="$PROJECT_DIR$/app/views/home.php" />
         <option value="$PROJECT_DIR$/app/views/Reservation.php" />
         <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
+        <option value="$PROJECT_DIR$/app/views/home.php" />
+        <option value="$PROJECT_DIR$/app/js/slider.js" />
+        <option value="$PROJECT_DIR$/app/views/slider.php" />
       </list>
     </option>
   </component>
@@ -410,7 +403,7 @@
       <workItem from="1525174158181" duration="2595000" />
       <workItem from="1525375937145" duration="3172000" />
       <workItem from="1525383517108" duration="498000" />
-      <workItem from="1525534418828" duration="6299000" />
+      <workItem from="1525534418828" duration="8679000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -601,11 +594,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525540193086</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Removed unnecessary files">
+      <created>1525540878165</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1525540878165</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105312000" />
+    <option name="totallyTimeSpent" value="107692000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -627,7 +627,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75718606" weight="0.28298888" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4969743" weight="0.27027026" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2715959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2672035" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="right" id="Database" order="3" weight="0.08872651" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
@@ -712,7 +712,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="front end changes : &#10;page :login/home / form de consommation" />
     <MESSAGE value="CSS Editing : Part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS Editing : Part 1" />
+    <MESSAGE value="Removed unnecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary files" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -722,8 +723,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PROJECT/CheckInForm.php" />
-    <entry file="file://$PROJECT_DIR$/PROJECT/CheckCIN.php" />
     <entry file="file://$PROJECT_DIR$/PROJECT/404.php" />
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/PROJECT/css/homepage.css" />
@@ -1061,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1091,8 +1083,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="238">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50251" selection-start-line="4" selection-start-column="50251" selection-end-line="4" selection-end-column="50251" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
         </state>
       </provider>
     </entry>
