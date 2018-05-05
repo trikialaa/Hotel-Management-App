@@ -69,8 +69,8 @@ include("navbar.php");
         </div>
     </div>
     <div class="controls">
-        <b>Room Number</b>
-        <input type="number" id="roomnumber" name="roomnumber" placeholder="Room Number" required>
+        <b>Numéro de la chambre</b>
+        <input type="number" id="roomnumber" name="roomnumber" placeholder="Numéro de la chambre" required>
     </div>
     <div class="grid">
         <button type="submit" value="Submit" class="col-1-4">Valider</button>
