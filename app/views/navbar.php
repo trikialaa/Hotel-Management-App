@@ -7,7 +7,7 @@
     <a class="link" href="http://localhost:3000/reservation">Réservation</a>
     <a class="link" href="http://localhost:3000/singlerooms">Check-in</a>
     <a class="link" href="http://localhost:3000/consomation">Consommation</a>
-    <a class="link" href="#">Factures</a>
+    <a class="link" href="http://localhost:3000/facture">Factures</a>
     <a class="link" href="#">Check-out</a>
     <?php
     if ($_SESSION['admin'] === true) {

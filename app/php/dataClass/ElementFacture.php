@@ -12,23 +12,58 @@ class ElementFacture
     public $NAME;
     public $PRICE;
     public $TYPE;
+    public $Quantite;
 
-    public function showInRow(){
+    public function showInSelect()
+    {
         // THIS METHOD IMPLIES ECHOING <table> FIRST !!
-        echo "<tr><td>".$this->ELEMENTID."</td><td>".$this->NAME."</td><td>".$this->TYPE."</td><td>".$this->PRICE."</td></tr>";
+        echo '<option value=' . $this->ELEMENTID . '>' . $this->NAME . '</option>';
     }
-    public static function startTable(){
-        echo "<table>";
+
+    public static function startSelect()
+    {
+        echo "<select>";
     }
-    public static function endTable(){
+
+    public static function endSelect()
+    {
+        echo "</select>";
+    }
+
+    public static function printSelect($a)
+    {
+        self::startSelect();
+        foreach ($a as $v){
+            $v->showInSelect();
+        }
+        self::endSelect();
+    }
+
+    public static function startTable()
+    {
+        echo "<table bgcolor='silver' width='600px'>";
+    }
+
+    public static function endTable()
+    {
         echo "</table>";
     }
 
-    public static function printArray($a){
+    public function showInRow()
+    {
+        // THIS METHOD IMPLIES ECHOING <table> FIRST !!
+        echo '<tr><td>' . $this->PRICE . '</td><td>' . $this->NAME . '</td><td>' . $this->Quantite . '</td></tr>';
+    }
+
+    public static function printArray($a)
+    {
         self::startTable();
-        foreach ($a as $v){
+        $total = 0;
+        foreach ($a as $v) {
             $v->showInRow();
+            $total += $v->PRICE * $v->Quantite;
         }
+        echo '<tr><td><td><td>' . $total . '</td>';
         self::endTable();
     }
 

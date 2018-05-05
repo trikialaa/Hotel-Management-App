@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="ajout bouton logout &#10;verfication de la variable session dans chaque page&#10;redirection vers page de login si non connecté&#10;verfication de admin dans page ajouter agent">
+    <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/facture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/php/controlClass/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/controlClass/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/CheckInForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/CheckInForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Singlerooms.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Singlerooms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/ajouteragent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/ajouteragent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/consommation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/consommation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/php/dataClass/ElementFacture.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/php/dataClass/ElementFacture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\GL2WebProject\.idea\shelf/" />
     <ignored path="C:\Users\GMI\PhpstormProjects\schoolproject\GL2WebProject\.idea\shelf/" />
@@ -44,94 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
-              <folding>
-                <element signature="e#2159#2166#1#HTML" expanded="true" />
-                <element signature="e#2620#2626#0#HTML" expanded="true" />
-                <element signature="e#2626#2632#0#HTML" expanded="true" />
-                <element signature="e#2962#2968#0#HTML" expanded="true" />
-                <element signature="e#2968#2974#0#HTML" expanded="true" />
-                <element signature="e#3228#3234#0#HTML" expanded="true" />
-                <element signature="e#3234#3240#0#HTML" expanded="true" />
-                <element signature="e#3491#3497#0#HTML" expanded="true" />
-                <element signature="e#3497#3503#0#HTML" expanded="true" />
-                <element signature="e#3734#3740#0#HTML" expanded="true" />
-                <element signature="e#3740#3746#0#HTML" expanded="true" />
-                <element signature="e#3931#3937#0#HTML" expanded="true" />
-                <element signature="e#3937#3943#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/navbar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormulaireReservation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/FormulaireReservation.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CheckCIN.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/CheckCIN.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consommation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/consommation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ajouteragent.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/ajouteragent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/controlClass/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="828">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -139,8 +52,100 @@
       <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="378">
+              <caret line="22" column="61" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ajout_Agent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/php/controlClass/Ajout_Agent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BDRequestManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1165">
+              <caret line="580" selection-start-line="580" selection-end-line="580" />
+              <folding>
+                <element signature="n#__construct#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getInstance#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addClientToBd#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addClientToBdForReservation#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getAllClients#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#checkAdmin#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#checkAgentLogin#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#isClientInBd#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#checkAgent#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getElementFactureByType#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getAllEFTypes#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#createReservation#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addClientToSejour#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getReservationsForClient#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#setReservationToFalse#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#updateClientInfo#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#deleteSejour#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getSejourFromRoom#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#unlinkSejourFromClient#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#removeDeadReservation#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getDeadReservation#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addConsumptionToSejour#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#checkElementExistsInFacture#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#updateQuantiteElementFacture#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#resolveConsumption#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#addAgent#0;n#BDRequestManager#0;n#!!top" />
+                <element signature="n#getOccupiedRooms#0;n#BDRequestManager#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ElementFacture.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/php/dataClass/ElementFacture.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facture.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/facture.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-324">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -179,7 +184,7 @@
       <find>chambreid</find>
       <find>cham</find>
       <find>idchambre</find>
-      <find>checkin</find>
+      <find>getI</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -197,9 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/form.css" />
-        <option value="$PROJECT_DIR$/formulaireCheckin.php" />
-        <option value="$PROJECT_DIR$/router/public/php/controlClass/Reservtion.php" />
         <option value="$PROJECT_DIR$/router/Reservation.php" />
         <option value="$PROJECT_DIR$/router/public/php/controlClass/Reservation.php" />
         <option value="$PROJECT_DIR$/router/views/Reservation.php" />
@@ -225,29 +227,32 @@
         <option value="$PROJECT_DIR$/router/views/CheckInForm.php" />
         <option value="$PROJECT_DIR$/router/public/index.php" />
         <option value="$PROJECT_DIR$/router/views/index.php" />
-        <option value="$PROJECT_DIR$/app/views/CheckCIN.php" />
-        <option value="$PROJECT_DIR$/app/css/login.css" />
-        <option value="$PROJECT_DIR$/app/css/navbarstyle.css" />
+        <option value="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" />
+        <option value="$PROJECT_DIR$/app/php/controlClass/login.php" />
         <option value="$PROJECT_DIR$/app/js/form_check_in.js" />
         <option value="$PROJECT_DIR$/app/css/form_check_in.css" />
         <option value="$PROJECT_DIR$/app/php/dataClass/Agent.php" />
-        <option value="$PROJECT_DIR$/app/css/homepage.css" />
-        <option value="$PROJECT_DIR$/app/views/clients.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/views/test.php" />
         <option value="$PROJECT_DIR$/app/js/table.js" />
+        <option value="$PROJECT_DIR$/app/css/homepage.css" />
+        <option value="$PROJECT_DIR$/app/css/login.css" />
+        <option value="$PROJECT_DIR$/app/css/modalForm.css" />
         <option value="$PROJECT_DIR$/app/css/table.css" />
-        <option value="$PROJECT_DIR$/app/php/controlClass/cin.php" />
-        <option value="$PROJECT_DIR$/app/php/controlClass/Singlerooms.php" />
-        <option value="$PROJECT_DIR$/app/php/controlClass/login.php" />
-        <option value="$PROJECT_DIR$/app/views/home.php" />
-        <option value="$PROJECT_DIR$/app/views/navbar.php" />
+        <option value="$PROJECT_DIR$/app/views/CheckCIN.php" />
         <option value="$PROJECT_DIR$/app/views/CheckInForm.php" />
-        <option value="$PROJECT_DIR$/app/views/login.php" />
-        <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/views/consommation.php" />
+        <option value="$PROJECT_DIR$/app/views/home.php" />
         <option value="$PROJECT_DIR$/app/views/Reservation.php" />
+        <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
+        <option value="$PROJECT_DIR$/app/css/welcome.css" />
+        <option value="$PROJECT_DIR$/app/css/navbarstyle.css" />
+        <option value="$PROJECT_DIR$/app/views/login.php" />
         <option value="$PROJECT_DIR$/app/views/ajouteragent.php" />
+        <option value="$PROJECT_DIR$/app/php/controlClass/Ajout_Agent.php" />
+        <option value="$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/views/facture.php" />
+        <option value="$PROJECT_DIR$/app/php/dataClass/ElementFacture.php" />
+        <option value="$PROJECT_DIR$/app/views/navbar.php" />
       </list>
     </option>
   </component>
@@ -263,70 +268,57 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="784" />
-    <option name="height" value="788" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controlClass" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dataClass" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="controlClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="dataClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,7 +329,7 @@
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/tpphp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tpphp" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -347,6 +339,129 @@
       <recent name="C:\xampp\htdocs\GL2WebProject" />
       <recent name="C:\xampp\htdocs\GL2WebProject\router\views" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/css/form_check_in.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/css/table.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/php/controlClass/cin.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/php/controlClass/login.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/CheckInForm.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/Reservation.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/Singlerooms.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/ajouteragent.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/consommation.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/home.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/login.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/navbar.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/index.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -360,26 +475,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.test.php">
+  <component name="RunManager" selected="JavaScript Debug.Singlerooms.php (2)">
+    <configuration name="Singlerooms.php (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject2/OLD/Singlerooms.php" />
     <configuration name="Singlerooms.php (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject2/app/views/Singlerooms.php" />
-    <configuration name="ajouteragent.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject2/app/views/ajouteragent.php" />
-    <configuration name="consommation.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject2/app/views/consommation.php" />
+    <configuration name="Singlerooms.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject/Singlerooms.php" />
     <configuration name="home.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject2/app/views/home.php" />
-    <configuration name="test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject2/app/views/test.php" />
+    <configuration name="login.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/GL2WebProject/login.php" />
     <list>
+      <item itemvalue="JavaScript Debug.login.php" />
+      <item itemvalue="JavaScript Debug.Singlerooms.php" />
+      <item itemvalue="JavaScript Debug.Singlerooms.php (1)" />
       <item itemvalue="JavaScript Debug.Singlerooms.php (2)" />
       <item itemvalue="JavaScript Debug.home.php" />
-      <item itemvalue="JavaScript Debug.consommation.php" />
-      <item itemvalue="JavaScript Debug.ajouteragent.php" />
-      <item itemvalue="JavaScript Debug.test.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.test.php" />
-        <item itemvalue="JavaScript Debug.ajouteragent.php" />
-        <item itemvalue="JavaScript Debug.consommation.php" />
         <item itemvalue="JavaScript Debug.Singlerooms.php (2)" />
         <item itemvalue="JavaScript Debug.home.php" />
+        <item itemvalue="JavaScript Debug.Singlerooms.php (1)" />
+        <item itemvalue="JavaScript Debug.login.php" />
+        <item itemvalue="JavaScript Debug.Singlerooms.php" />
       </list>
     </recent_temporary>
   </component>
@@ -418,14 +533,10 @@
       <workItem from="1524995774819" duration="434000" />
       <workItem from="1525036418744" duration="18000" />
       <workItem from="1525117393972" duration="1133000" />
-      <workItem from="1525122875206" duration="7121000" />
-      <workItem from="1525272035493" duration="6812000" />
-      <workItem from="1525356240564" duration="131000" />
-      <workItem from="1525356399998" duration="902000" />
-      <workItem from="1525378495258" duration="319000" />
-      <workItem from="1525431517565" duration="42000" />
-      <workItem from="1525438062132" duration="806000" />
-      <workItem from="1525442584182" duration="3222000" />
+      <workItem from="1525122875206" duration="5984000" />
+      <workItem from="1525174158181" duration="2595000" />
+      <workItem from="1525375937145" duration="3172000" />
+      <workItem from="1525383517108" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -595,27 +706,20 @@
       <option name="project" value="LOCAL" />
       <updated>1524958277728</updated>
     </task>
-    <task id="LOCAL-00025" summary="Numéro de chambre cliqué ajouté au formulaire">
-      <created>1525129794349</created>
+    <task id="LOCAL-00025" summary="front end changes : &#10;page :login/home / form de consommation">
+      <created>1525179450751</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1525129794349</updated>
+      <updated>1525179450751</updated>
     </task>
-    <task id="LOCAL-00026" summary="checkcin moved">
-      <created>1525279512796</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1525279512796</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98451000" />
+    <option name="totallyTimeSpent" value="96768000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -625,55 +729,68 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3139183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27452025" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32792208" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.24281392" side_tool="true" weight="0.024752475" />
       <window_info anchor="right" id="Database" order="3" weight="0.08872651" />
       <window_info anchor="bottom" id="Database Changes" order="14" sideWeight="0.49946696" weight="0.5217877" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75718606" visible="true" weight="0.03409091" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75718606" weight="0.05251397" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4969743" weight="0.27272728" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4969743" weight="0.14636871" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39772728" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="8" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32905483" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.0" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.7579957" weight="0.025698325" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="1" sideWeight="0.4989339" weight="0.32960895" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" weight="0.3295711" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.151357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.271855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.3295325" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="9" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
-      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32905483" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32960895" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.08872651" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" visible="true" weight="0.06703911" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="15" sideWeight="0.49946696" weight="0.5217877" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.080617495" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32792208" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75718606" weight="0.05251397" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32905483" />
+      <window_info anchor="bottom" id="Database Changes" order="14" sideWeight="0.49946696" weight="0.5217877" />
+      <window_info anchor="right" id="Database" order="3" weight="0.08872651" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.24281392" side_tool="true" weight="0.024752475" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39772728" />
+      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4969743" visible="true" weight="0.27150837" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" weight="0.3295711" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.271855" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32792208" />
+      <window_info anchor="bottom" id="Database Changes" order="15" sideWeight="0.49946696" weight="0.5217877" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="9" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32905483" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.08872651" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4969743" visible="true" weight="0.27150837" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39772728" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.75718606" weight="0.05251397" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.24281392" side_tool="true" weight="0.024752475" />
+      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -717,42 +834,13 @@
     <MESSAGE value="j'ai telecharger les fichier css et jquery dont on a besoin ( pour le script des formulaires )" />
     <MESSAGE value="added form to the dialog box" />
     <MESSAGE value="test" />
-    <MESSAGE value="Numéro de chambre cliqué ajouté au formulaire" />
-    <MESSAGE value="checkcin moved" />
-    <MESSAGE value="ajout bouton logout &#10;verfication de la variable session dans chaque page&#10;redirection vers page de login si non connecté&#10;verfication de admin dans page ajouter agent" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout bouton logout &#10;verfication de la variable session dans chaque page&#10;redirection vers page de login si non connecté&#10;verfication de admin dans page ajouter agent" />
+    <MESSAGE value="front end changes : &#10;page :login/home / form de consommation" />
+    <option name="LAST_COMMIT_MESSAGE" value="front end changes : &#10;page :login/home / form de consommation" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="163" column="44" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/form_check_in.css" />
     <entry file="file://$PROJECT_DIR$/formulaireCheckin.php" />
     <entry file="file://$PROJECT_DIR$/router/public/start.bat" />
     <entry file="file://$PROJECT_DIR$/OLD/FormulaireReservation.php" />
@@ -835,11 +923,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exec.bat">
+    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Chambre.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
+        <state relative-caret-position="-425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Sejour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/form_check_in.js">
@@ -849,185 +945,228 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Agent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clients.php" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/test.php" />
-    <entry file="file://$PROJECT_DIR$/app/css/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/cin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/form_check_in.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
-          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/welcome.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/Reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/elementfacturetab.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/CheckInForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/php/controlClass/Singlerooms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="525">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php">
+    <entry file="file://$PROJECT_DIR$/app/js/table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="163" column="44" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="44" />
+        <state relative-caret-position="462">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.php">
+    <entry file="file://$PROJECT_DIR$/app/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="553">
+          <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login.php">
+    <entry file="file://$PROJECT_DIR$/app/css/modalForm.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="592">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/CheckInForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/consommation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="1491">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/dataClass/Agent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/php/controlClass/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="342">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
+    <entry file="file://$PROJECT_DIR$/app/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exec.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/CheckCIN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ajouteragent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="828">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/controlClass/Ajout_Agent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/controlClass/Reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+        <state relative-caret-position="469">
+          <caret line="200" column="4" lean-forward="true" selection-end-line="218" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/controlClass/facture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/controlClass/BDRequestManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1165">
+          <caret line="580" selection-start-line="580" selection-end-line="580" />
           <folding>
-            <element signature="e#2159#2166#1#HTML" expanded="true" />
-            <element signature="e#2620#2626#0#HTML" expanded="true" />
-            <element signature="e#2626#2632#0#HTML" expanded="true" />
-            <element signature="e#2962#2968#0#HTML" expanded="true" />
-            <element signature="e#2968#2974#0#HTML" expanded="true" />
-            <element signature="e#3228#3234#0#HTML" expanded="true" />
-            <element signature="e#3234#3240#0#HTML" expanded="true" />
-            <element signature="e#3491#3497#0#HTML" expanded="true" />
-            <element signature="e#3497#3503#0#HTML" expanded="true" />
-            <element signature="e#3734#3740#0#HTML" expanded="true" />
-            <element signature="e#3740#3746#0#HTML" expanded="true" />
-            <element signature="e#3931#3937#0#HTML" expanded="true" />
-            <element signature="e#3937#3943#0#HTML" expanded="true" />
+            <element signature="n#__construct#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getInstance#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addClientToBd#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addClientToBdForReservation#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getAllClients#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#checkAdmin#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#checkAgentLogin#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#isClientInBd#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#checkAgent#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getElementFactureByType#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getAllEFTypes#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#createReservation#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addClientToSejour#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getReservationsForClient#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#setReservationToFalse#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#updateClientInfo#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#deleteSejour#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getSejourFromRoom#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#unlinkSejourFromClient#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#removeDeadReservation#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getDeadReservation#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addConsumptionToSejour#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#checkElementExistsInFacture#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#updateQuantiteElementFacture#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#resolveConsumption#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#addAgent#0;n#BDRequestManager#0;n#!!top" />
+            <element signature="n#getOccupiedRooms#0;n#BDRequestManager#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/facture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/dataClass/ElementFacture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/FormulaireReservation.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/CheckCIN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="180">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>

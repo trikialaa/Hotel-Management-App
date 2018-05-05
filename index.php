@@ -14,6 +14,9 @@
             case '/reservation':
                 require 'app/views/Reservation.php';
                 break;
+            case '/facture':
+                require 'app/views/facture.php';
+                break;
             case '/singlerooms':
                 require 'app/views/Singlerooms.php';
                 break;
