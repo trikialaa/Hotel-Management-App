@@ -15,11 +15,12 @@ ol, ul {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 caption, th, td {
-    text-align: left;
-    font-weight: normal;
+    font-weight: bolder;
+    text-align: center;
     vertical-align: middle;
 }
 
@@ -87,6 +88,9 @@ h2.heading {
     position: relative;
 }
 
+.controls b {
+    color: black;
+}
 .controls input[type="text"],
 .controls input[type="email"],
 .controls input[type="number"],
@@ -102,7 +106,7 @@ h2.heading {
     border: 1px solid #c6c6c6;
     width: 100%;
     margin-bottom: 18px;
-    color: #888;
+    color: black;
     font-family: 'Lato', 'sans-serif';
     font-size: 16px;
     font-weight: 300;
@@ -221,10 +225,6 @@ button:hover {
     clear: both;
 }
 
-.grid {
-    background: white;
-}
-
 .grid:after {
     /* Or @extend clearfix */
     content: "";
@@ -255,6 +255,8 @@ button:hover {
 
 .col-1-4 {
     width: 25%;
+    align: center;
+    color: white;
 }
 
 @media (max-width: 760px) {

@@ -16,7 +16,6 @@ class ElementFacture
 
     public function showInSelect()
     {
-        // THIS METHOD IMPLIES ECHOING <table> FIRST !!
         echo '<option value=' . $this->ELEMENTID . '>' . $this->NAME . '</option>';
     }
 
@@ -41,7 +40,8 @@ class ElementFacture
 
     public static function startTable()
     {
-        echo "<table bgcolor='silver' width='600px'>";
+        echo "<table align='center' width='600px' border='1'>";
+        echo '<tr style="background: #2231FF"><td>Nom de l\'article</td><td>Quantité</td><td>Prix unitaire</td></tr>';
     }
 
     public static function endTable()
@@ -51,8 +51,7 @@ class ElementFacture
 
     public function showInRow()
     {
-        // THIS METHOD IMPLIES ECHOING <table> FIRST !!
-        echo '<tr><td>' . $this->PRICE . '</td><td>' . $this->NAME . '</td><td>' . $this->Quantite . '</td></tr>';
+        echo '<tr><td>' . $this->NAME . '</td><td>' . $this->Quantite . '</td><td>' . $this->PRICE . '</td></tr>';
     }
 
     public static function printArray($a)
@@ -63,7 +62,8 @@ class ElementFacture
             $v->showInRow();
             $total += $v->PRICE * $v->Quantite;
         }
-        echo '<tr><td><td><td>' . $total . '</td>';
+        $total = number_format($total, 3, '.', '');
+        echo '<td colspan="2">TOTAL :<td>' . $total . '</td>';
         self::endTable();
     }
 

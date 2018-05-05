@@ -20,11 +20,11 @@ include("navbar.php");
     <div class="form-group">
         <h2 class="heading">Effectuer réservation</h2>
         <div class="controls">
-            <b> &nbsp;&nbsp;Nom </b>
+            <b>Nom </b>
             <input type="text" id="nom" class="floatLabel" name="nom" placeholder="Nom" required>
         </div>
         <div class="controls">
-            <b> &nbsp;&nbsp;Prénom </b>
+            <b>Prénom </b>
             <input type="text" id="prenom" class="floatLabel" name="prenom" placeholder="Prénom" required>
         </div>
 
@@ -54,14 +54,14 @@ include("navbar.php");
 
         <div class="col-1-4 col-1-4-sm">
             <div class="controls">
-                <b> &nbsp;&nbsp;Arrivé </b>
+                <b>Arrivé </b>
                 <input type="date" id="datearr" class="floatLabel" name="datearr" value="<?php echo date('Y-m-d'); ?>">
 
             </div>
         </div>
         <div class="col-1-4 col-1-4-sm">
             <div class="controls">
-                <b> &nbsp;&nbsp;Départ </b>
+                <b>Départ </b>
                 <input type="date" id="datedepp" class="floatLabel" name="datedepp"
                        value="<?php echo date('Y-m-d'); ?>"/>
 
@@ -69,8 +69,8 @@ include("navbar.php");
         </div>
     </div>
     <div class="controls">
-        <b> <i class="fa fa-home"></i>&nbsp;&nbsp;Room Number</b>
-        <input type="number" id="roomnumber" name="roomnumber" placeholder="Room Number" required>
+        <b>Numéro de la chambre</b>
+        <input type="number" id="roomnumber" name="roomnumber" placeholder="Numéro de la chambre" required>
     </div>
     <div class="grid">
         <button type="submit" value="Submit" class="col-1-4">Valider</button>
