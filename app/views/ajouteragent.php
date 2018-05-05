@@ -18,32 +18,38 @@ include("navbar.php");
     <h2 class="heading">Ajouter Agent</h2>
 
     <div class="controls">
+        <b> Nom </b>
         <input type="text" id="nom" class="floatLabel" name="nom" required>
-        <label for="nom">Nom</label>
+
     </div>
 
     <div class="controls">
+        <b> Prenom </b>
         <input type="text" id="prenom" class="floatLabel" name="prenom" required>
-        <label for="prenom">Prenom </label>
+
     </div>
     <div class="controls">
+        <b> Num TEL </b>
         <input type="text" id="tel" class="floatLabel" name="tel" required>
-        <label for="tel">Numero Téléphone </label>
+
     </div>
     <div class="controls">
+        <b> &nbsp;Adresse </b>
         <input type="text" id="adresse" class="floatLabel" name="adresse" required>
-        <label for="adresse">Adresse </label>
+
     </div>
 
     <div class="controls">
+        <b> Login </b>
         <input type="text" id="login" class="floatLabel" name="login" required>
-        <label for="login">Login </label>
+
     </div>
 
 
     <div class="controls">
+        <b> Mot de Passe </b>
         <input type="password" id="mdp" class="floatLabel" name="mdp" required>
-        <label for="mdp">Mot de passe </label>
+
     </div>
 
 
