@@ -23,12 +23,7 @@ if (isset($_GET['roomnumber'])) {
 <head>
     <meta charset="UTF-8">
     <title>single rooms</title>
-    <link rel="stylesheet" href="app/css/font-awesome.css">
-    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="app/css/icon.css">
-    <link rel="stylesheet" href="app/css/form_check_in.css">
-    <link rel="stylesheet" type="text/css" href="app/css/table.css">
-    <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
 
     <style type="text/css">
         input.button {
@@ -36,6 +31,7 @@ if (isset($_GET['roomnumber'])) {
             color: white;
         }
     </style>
+
 </head>
 <body>
 
@@ -59,13 +55,10 @@ if (isset($_GET['roomnumber'])) {
     }
     ?>
 </div>
-
+<?php
+include("foot.php");
+?>
 
 </body>
-<script src='app/js/jquery-1.7.2.min.js'></script>
-<script src='app/js/jquery.min.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
 
 </html>

@@ -11,7 +11,7 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
-    <title>Systéme de gestion d'un hotel</title>
+    <title>Système de gestion de l'hôtel Royal Venus</title>
     <link rel="stylesheet" href="app\css\login.css">
 </head>
 
@@ -19,26 +19,29 @@ session_start();
 
 <div id="box1" class="box blurred-bg tinted">
     <div class="content">
-        <h1>Systéme de gestion </h1>
-        <p class="related">Royal Venus</p>
         <div>
             <div class="img_container">
-                <img src="app\img\logo_black.png" alt="Avatar" class="avatar">
+                <img src="app\img\logo_blue.png" alt="Avatar" class="avatar">
             </div>
+            <br><br>
+            <h1 style="font-size: 40px;text-transform: uppercase; font-weight: bolder;">Système de gestion de
+                l'hôtel<br>Royal Venus</h1>
             <form action="app\php\controlClass\login.php" method="post">
                 <div class="container">
-                    <label for="username"><b>Username</b></label>
-                    <input id="username" type="text" placeholder="Enter Username" name="username" required>
+                    <label for="username" style="color:#5887ff;font-weight: bolder;"><b>Nom de l'utilisateur</b></label>
+                    <input id="username" type="text" placeholder="Entrez votre nom d'utilisateur" name="username"
+                           required>
 
-                    <label for="password"><b>Password</b></label>
-                    <input id="password" type="password" placeholder="Enter Password" name="password" required>
+                    <label for="password" style="color:#5887ff;font-weight: bolder;"><b>Mot de passe</b></label>
+                    <input id="password" type="password" placeholder="Entrez votre mot de passe" name="password"
+                           required>
 
                     <div class="container">
-                        <button type="submit" class="cancel_btn">Login</button>
-                        <button type="button" class="cancel_btn">Cancel</button>
+                        <button type="submit" class="cancel_btn">Valider</button>
+                        <button type="button" class="cancel_btn">Annuler</button>
                     </div>
                     <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
                     </label>
                 </div>
             </form>

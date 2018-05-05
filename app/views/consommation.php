@@ -28,10 +28,7 @@ if (isset($_GET['chambre']) && $_GET['quantite']) {
 <head>
     <meta charset="UTF-8">
     <title>Ajouter Consommation</title>
-    <link rel="stylesheet" href="app/css/font-awesome.css">
-    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="app/css/icon.css">
-    <link rel="stylesheet" href="app/css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
 </head>
 <body>
 
@@ -59,17 +56,15 @@ if (isset($_GET['chambre']) && $_GET['quantite']) {
         </div>
 
         <br>
-        <button id="cancel" type="reset" class="col-1-4" style="color: white">Cancel</button>
+        <button id="cancel" type="reset" class="col-1-4">Cancel</button>
         <br>
-        <button id="confirm" type="submit" class="col-1-4" style="color: white">Confirmer</button>
+        <button id="confirm" type="submit" class="col-1-4">Confirmer</button>
+        <br>
+    </div>
 </form>
-<script src='app/js/jquery-1.7.2.min.js'></script>
-<script src="app/js/form_check_in.js"></script>
-<script src='app/js/jquery.min.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
 
-
+<?php
+include("foot.php");
+?>
 </body>
 </html>

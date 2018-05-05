@@ -1,9 +1,12 @@
 body {
-    background: #f6f3d0;
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover
 }
 .box {
     width: 800px;
-    height: 800px;
+    height: 1000px;
     left: -webkit-calc( 50% - 250px );
     top: 20%;
     position: relative ;
@@ -18,10 +21,9 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     display: flex;
     transition: box-shadow .3s ease;
-    background: #d0cdb0;
+    background: rgba(255, 255, 255, 0.6);
 }
 .box:active {
     cursor: move;
@@ -61,11 +63,8 @@ p.related a {
 p.related a:hover {
     text-decoration: underline;
 }
-/* container */
-/* Bordered form */
 
 
-/* Full-width inputs */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -75,9 +74,8 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button {
-    background-color: #c03000;
+    background-color: #5887ff;
     color: #ffffff;
     padding: 14px 20px;
     margin: 8px 0;
@@ -86,44 +84,37 @@ button {
     width: 100%;
 }
 
-/* Add a hover effect for buttons */
 button:hover {
     opacity: 0.8;
 }
 
-/* Extra style for the cancel button (red) */
 .cancel_btn {
     width: auto;
     padding: 10px 40px;
-    background-color: #c03000;
+    background-color: #5887ff;
     color: white;
 }
 
-/* Center the avatar image inside this container */
 .img_container{
     text-align: center;
     margin: 24px 0 12px 0;
 }
 
-/* Avatar image */
 img.avatar {
-    width: 30%;
+    width: 90%;
     border-radius: 20%;
 }
 
-/* Add padding to containers */
 .container {
     padding: 15px;
 
 }
 
-/* The "Forgot password" text */
 span.psw {
     float: right;
     padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
         display: block;
