@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="app/css/icon.css">
 
-    <link rel="stylesheet" href="app/css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
 
 
 </head>
@@ -38,6 +38,8 @@
     </div>
 
 </form>
-
+<?php
+include("foot.php");
+?>
 </body>
 </html>

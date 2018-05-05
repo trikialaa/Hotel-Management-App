@@ -2,7 +2,10 @@
 
 html {
     line-height: 1;
-    background: #fffcd8;
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover
 }
 
 ol, ul {

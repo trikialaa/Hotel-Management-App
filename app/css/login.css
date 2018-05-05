@@ -1,5 +1,8 @@
 body {
-    background: #f6f3d0;
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover
 }
 .box {
     width: 800px;
@@ -21,7 +24,7 @@ body {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     display: flex;
     transition: box-shadow .3s ease;
-    background: #d0cdb0;
+    background: rgba(255, 255, 255, 0.6);
 }
 .box:active {
     cursor: move;

@@ -14,7 +14,7 @@ if (!isset($_SESSION["logged_in"])) header('Location:login');
 
     <link rel="stylesheet" href="app/css/icon.css">
 
-    <link rel="stylesheet" href="app/css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
 
 
 </head>
@@ -142,13 +142,9 @@ if (!isset($_SESSION["logged_in"])) header('Location:login');
     </div>
     </div> <!-- /.form-group -->
 </form>
-
-<script src='app/js/jquery-1.7.2.min.js'></script>
-<script  src="app/js/form_check_in.js"></script>
-<script src='app/js/jquery.min.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
+<?php
+include("foot.php");
+?>
 
 
 </body>

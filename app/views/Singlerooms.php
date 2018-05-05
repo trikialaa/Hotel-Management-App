@@ -16,7 +16,7 @@ include("navbar.php");
     <link rel="stylesheet" href="app/css/font-awesome.css">
     <link href='app/css/css.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="app/css/icon.css">
-    <link rel="stylesheet" href="app/css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
     <link rel="stylesheet" type="text/css" href="app/css/table.css">
     <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
     <script>
@@ -207,13 +207,9 @@ include("navbar.php");
 </div>
 </div>
 </div>
+<?php
+include("foot.php");
+?>
 </body>
 <script src="app/js/table.js"></script>
-<script src='app/js/jquery-1.7.2.min.js'></script>
-<script src="app/js/form_check_in.js"></script>
-<script src='app/js/jquery.min.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
-
 </html>

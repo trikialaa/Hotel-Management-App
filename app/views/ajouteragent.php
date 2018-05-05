@@ -14,7 +14,7 @@ include("navbar.php");
 
     <link rel="stylesheet" href="app/css/icon.css">
 
-    <link rel="stylesheet" href="app/css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
 </head>
 <body>
 
@@ -60,13 +60,9 @@ include("navbar.php");
     </div>
 </form>
 
-<script src='app/js/jquery-1.7.2.min.js'></script>
-<script src="app/js/form_check_in.js"></script>
-<script src='app/js/jquery.min.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery-ui-autocomplete.js'></script>
-<script src='app/js/jquery.select-to-autocomplete.min.js'></script>
+<?php
+include("foot.php");
+?>
 <script src="app/php/controlClass/Ajout_Agent.php"></script>
-
 </body>
 </html>

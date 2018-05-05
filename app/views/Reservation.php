@@ -17,7 +17,7 @@ include("navbar.php");
 
     <link rel="stylesheet" href="app/css/icon.css">
 
-    <link rel="stylesheet" href="app/css/form_check_in.css">
+    <link rel="stylesheet" href="app/css/globalstyle.css">
 
 </head>
 <body>
@@ -82,6 +82,9 @@ include("navbar.php");
     </div>
 
 </form>
+<?php
+include("foot.php");
+?>
 <script src="app/php/controlClass/Reservation.php"></script>
 
 </body>
