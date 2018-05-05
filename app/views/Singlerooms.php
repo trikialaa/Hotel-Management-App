@@ -15,6 +15,7 @@ include("navbar.php");
     <title>single rooms</title>
     <link rel="stylesheet" href="app/css/globalstyle.css">
     <link rel="stylesheet" type="text/css" href="app/css/table.css">
+    <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
     <script>
         var rooms_js =<?php echo json_encode(getRooms()); ?>;
         var date_in = "<?php echo $_GET['date_in'] ?>";
@@ -93,7 +94,7 @@ include("navbar.php");
 
 
                 <p align="left">
-                    <b> <i </i> &nbsp;&nbsp;type id</b></p>
+                    <b>type id</b></p>
                 <div class="controls">
                     <select>
                         <option>CIN</option>
@@ -103,31 +104,31 @@ include("navbar.php");
 
 
                 <p align="left">
-                    <b> <i class="material-icons">person</i> &nbsp;&nbsp; Id Client: </b></p>
+                    <b>Id Client: </b></p>
                 <div class="controls">
                     <p class="floatLabel" size="15">ici le cin recuperé</p>
                 </div>
 
 
                 <p align="left">
-                    <b> <i class="material-icons">phone</i> &nbsp;&nbsp; Num Tel client</b></p>
+                    <b>Num Tel client</b></p>
                 <div class="controls">
                     <p class="floatLabel" size="15">ici le num tel recuperé</p>
                 </div>
 
 
                 <p align="left">
-                    <b> <i class="fa fa-home"></i>&nbsp;&nbsp;Type chambre </b>
+                    <b>Type chambre </b>
                     <div class="controls">
                 <p class="floatLabel" size="15">ici le type de chambre recuperé</p>
         </div>
         <p align="left">
-            <b> <i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivé </b>
+            <b>Arrivé </b>
             <div class="controls">
         <p class="floatLabel" size="15">ici la DA recupérée</p>
     </div>
     <p align="left">
-        <b> <i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ </b>
+        <b>Départ </b>
         <div class="controls">
     <p class="floatLabel" size="15">ici la DD recupérée</p>
 </div>

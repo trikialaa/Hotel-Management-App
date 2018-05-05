@@ -28,11 +28,11 @@ session_start();
                 l'hôtel<br>Royal Venus</h1>
             <form action="app\php\controlClass\login.php" method="post">
                 <div class="container">
-                    <label for="username" style="color:#5887ff;font-weight: bolder;"><b>Nom de l'utilisateur</b></label>
+                    <label for="username" style="color:#1b7099;font-weight: bolder;"><b>Nom de l'utilisateur</b></label>
                     <input id="username" type="text" placeholder="Entrez votre nom d'utilisateur" name="username"
                            required>
 
-                    <label for="password" style="color:#5887ff;font-weight: bolder;"><b>Mot de passe</b></label>
+                    <label for="password" style="color:#1b7099;font-weight: bolder;"><b>Mot de passe</b></label>
                     <input id="password" type="password" placeholder="Entrez votre mot de passe" name="password"
                            required>
 

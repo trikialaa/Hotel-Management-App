@@ -192,7 +192,7 @@ h2.heading {
 
 .controls label.active {
     top: -11px;
-    color: #555;
+    color: #1a8fdd;
     background-color: white;
     width: auto;
 }
@@ -204,15 +204,15 @@ h2.heading {
 
 button {
     cursor: pointer;
-    background-color: #5887ff;
+    background-color: #3c474f;
     border: none;
-    color: #fff;
+    color: #ffffff;
     padding: 12px 0;
     float: right;
 }
 
 button:hover {
-    background-color: #275aff;
+    background-color: #1d2f3d;
 }
 
 .clear:after {
