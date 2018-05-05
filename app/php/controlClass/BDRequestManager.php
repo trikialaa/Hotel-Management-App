@@ -220,6 +220,22 @@
         }
 
         //done
+        //returns all element facture by type
+        public function getAllElementFacture()
+        {
+            $sqlreq = "SELECT * FROM elementfacture";
+
+            try {
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute();
+                return $req->fetchAll(PDO::FETCH_CLASS, "ElementFacture");
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+                return null;
+            }
+        }
+
+        //done
         //returns all distinct types of element facture
         public function getAllEFTypes(){
             $sqlreq = "SELECT DISTINCT el.TYPE FROM elementfacture el";

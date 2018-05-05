@@ -22,7 +22,7 @@ class ElementFacture
 
     public static function startSelect()
     {
-        echo "<select>";
+        echo "<select name='selectElement'>";
     }
 
     public static function endSelect()

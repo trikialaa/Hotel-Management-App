@@ -2,6 +2,25 @@
 session_start();
 if (!isset($_SESSION["logged_in"])) header('Location:login');
 include("navbar.php");
+
+require 'app\php\controlClass\BDRequestManager.php';
+
+
+$bdrm = BDRequestManager::getInstance();
+$listConsumable = $bdrm->getAllElementFacture();
+
+if (isset($_GET['chambre']) && $_GET['quantite']) {
+
+    if ($_GET['chambre'] != '' && $_GET['quantite'] != '') {
+        $sejourid = $bdrm->getSejourFromRoom($_GET['chambre']);
+        if ($sejourid > 0) {
+            $bdrm->resolveConsumption($sejourid, $_GET['selectElement'], $_GET['quantite']);
+        } else {
+            echo "ERROR";
+        }
+
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +36,7 @@ include("navbar.php");
 <body>
 
 <h2 class="heading">Consommation</h2>
-<form action="" id="formconsommation"><!--formulaire consommation-->
+<form method="get" id="formconsommation"><!--formulaire consommation-->
 
 
     <div class="controls">
@@ -27,15 +46,16 @@ include("navbar.php");
 
 
     <div class="controls">
-        <input type="text" id="name" class="floatLabel" name="name">
-        <label for="name">Désignation</label>
+        <?php ElementFacture::printSelect($listConsumable) ?>
+
+
     </div>
 
 
     <div class="controls">
         <div class="controls">
-            <input type="text" id="prix" class="floatLabel" name="prix">
-            <label for="prix">Prix</label>
+            <input type="text" id="quantite" class="floatLabel" name="quantite">
+            <label for="quantite">Quantité</label>
         </div>
 
         <br>
