@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-<body style="padding:0px; margin:0px; font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+<body>
 
-<!-- #region Jssor Slider Begin -->
-<!-- Generator: Jssor Slider Maker -->
-<!-- Source: https://www.jssor.com -->
 <script src="app/js/slider.js" type="text/javascript"></script>
 <script type="text/javascript">
     jssor_1_slider_init = function () {
@@ -139,7 +136,7 @@
         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg"/>
     </div>
     <div data-u="slides"
-         style="border-style: solid; border-color:white;cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+         style="border-style: solid; border-color:white;cursor:default;position:relative;top:50px;left:0px;width:980px;height:380px;overflow:hidden;">
         <div data-p="170.00">
             <img data-u="image" src="app/img/001.jpg"/>
         </div>

@@ -76,8 +76,8 @@ h2.heading {
     text-transform: uppercase;
     font-weight: 300;
     text-align: left;
-    color: #d55302;
-    border-bottom: 1px solid #b9121b;
+    color: #275aff;
+    border-bottom: 1px solid #5887ff;
     padding-bottom: 3px;
     margin-bottom: 20px;
 }
@@ -155,7 +155,7 @@ h2.heading {
 .controls button:hover + label,
 .controls select:focus + label,
 .controls select:hover + label {
-    color: #bdcc00;
+    color: #2231ff;
     cursor: text;
 }
 
@@ -204,7 +204,7 @@ h2.heading {
 
 button {
     cursor: pointer;
-    background-color: #c03000;
+    background-color: #5887ff;
     border: none;
     color: #fff;
     padding: 12px 0;
@@ -212,7 +212,7 @@ button {
 }
 
 button:hover {
-    background-color: #d55302;
+    background-color: #275aff;
 }
 
 .clear:after {

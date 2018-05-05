@@ -33,8 +33,5 @@
     </div>
 
 </form>
-<?php
-include("foot.php");
-?>
 </body>
 </html>
