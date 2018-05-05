@@ -27,7 +27,7 @@ if (isset($_GET['roomnumber'])) {
 
     <style type="text/css">
         input.button {
-            background: #c03000;
+            background: #5887ff;
             color: white;
         }
     </style>

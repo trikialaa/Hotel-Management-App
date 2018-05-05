@@ -33,36 +33,35 @@ if (isset($_GET['chambre']) && $_GET['quantite']) {
 <body>
 
 <h2 class="heading">Consommation</h2>
-<form method="get" id="formconsommation"><!--formulaire consommation-->
-
+<form method="get" id="formconsommation">
 
     <div class="controls">
-        <input type="text" id="chambre" class="floatLabel" name="chambre">
-        <label for="chambre">Numéro chambre </label>
+        <b>Numéro de la chambre</b>
+        <input type="number" id="chambre" name="chambre" placeholder="Numéro de la chambre" required>
     </div>
 
 
     <div class="controls">
+        <b>Article commandé</b>
         <?php ElementFacture::printSelect($listConsumable) ?>
-
-
     </div>
 
+    <div class="controls">
+        <b>Quantité</b>
+        <input type="number" id="quantite" name="quantite" placeholder="Quantité" required>
+    </div>
 
     <div class="controls">
-        <div class="controls">
-            <input type="text" id="quantite" class="floatLabel" name="quantite">
-            <label for="quantite">Quantité</label>
-        </div>
 
-        <br>
-        <button id="cancel" type="reset" class="col-1-4">Cancel</button>
         <br>
         <button id="confirm" type="submit" class="col-1-4">Confirmer</button>
         <br>
+        <button id="cancel" type="reset" class="col-1-4">Cancel</button>
+        <br>
+
     </div>
 </form>
-
+<br><br><br>
 <?php
 include("foot.php");
 ?>
