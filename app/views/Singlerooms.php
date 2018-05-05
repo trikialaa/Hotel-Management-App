@@ -13,12 +13,8 @@ include("navbar.php");
 <head>
     <meta charset="UTF-8">
     <title>single rooms</title>
-    <link rel="stylesheet" href="app/css/font-awesome.css">
-    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="app/css/icon.css">
     <link rel="stylesheet" href="app/css/globalstyle.css">
     <link rel="stylesheet" type="text/css" href="app/css/table.css">
-    <link rel="stylesheet" type="text/css" href="app/css/modalForm.css">
     <script>
         var rooms_js =<?php echo json_encode(getRooms()); ?>;
         var date_in = "<?php echo $_GET['date_in'] ?>";

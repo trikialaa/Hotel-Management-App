@@ -9,11 +9,6 @@ include("navbar.php");
 <html>
 <head>
     <title>ajouter agent</title>
-    <link rel="stylesheet" href="app/css/font-awesome.css">
-    <link href='app/css/css.css' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="app/css/icon.css">
-
     <link rel="stylesheet" href="app/css/globalstyle.css">
 </head>
 <body>
