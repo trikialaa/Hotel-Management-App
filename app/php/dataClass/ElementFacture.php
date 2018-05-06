@@ -41,7 +41,7 @@ class ElementFacture
     public static function startTable()
     {
         echo "<table align='center' width='600px' border='1'>";
-        echo '<tr style="background: #2231FF"><td>Nom de l\'article</td><td>Quantité</td><td>Prix unitaire</td></tr>';
+        echo '<tr style="background: #535c6b"><td>Nom de l\'article</td><td>Quantité</td><td>Prix unitaire</td></tr>';
     }
 
     public static function endTable()
