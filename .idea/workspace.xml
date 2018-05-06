@@ -4,7 +4,6 @@
     <list default="true" id="de9b02bc-178a-4f28-9555-0713b9a1a284" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/globalstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/globalstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Reservation.php" afterDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\GL2WebProject\.idea\shelf/" />
     <ignored path="C:\Users\GMI\PhpstormProjects\schoolproject\GL2WebProject\.idea\shelf/" />
@@ -36,61 +35,64 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Reservation.php">
+    <leaf>
+      <file leaf-file-name="slider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="2346">
+              <caret line="138" column="95" selection-start-line="138" selection-start-column="95" selection-end-line="138" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajout_Agent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/controlClass/Ajout_Agent.php">
+      <file leaf-file-name="foot.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/foot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="68">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Singlerooms.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="170" column="21" lean-forward="true" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbarstyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/table.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modalForm.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/modalForm.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-347" />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="globalstyle.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/css/globalstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consommation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/consommation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facture.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/facture.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ElementFacture.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/dataClass/ElementFacture.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="244" column="18" lean-forward="true" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -107,8 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>arr</find>
-      <find>type</find>
       <find>headi</find>
       <find>tel</find>
       <find>arrive</find>
@@ -137,6 +137,8 @@
       <find>float</find>
       <find>controls</find>
       <find>grid</find>
+      <find>label</find>
+      <find>code postal</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -192,7 +194,6 @@
         <option value="$PROJECT_DIR$/app/views/navbar.php" />
         <option value="$PROJECT_DIR$/app/views/ajouteragent.php" />
         <option value="$PROJECT_DIR$/app/views/CheckInForm.php" />
-        <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/js/slider.js" />
         <option value="$PROJECT_DIR$/app/css/login.css" />
         <option value="$PROJECT_DIR$/app/views/login.php" />
@@ -206,6 +207,7 @@
         <option value="$PROJECT_DIR$/app/views/consommation.php" />
         <option value="$PROJECT_DIR$/app/php/dataClass/ElementFacture.php" />
         <option value="$PROJECT_DIR$/app/views/Reservation.php" />
+        <option value="$PROJECT_DIR$/app/views/Singlerooms.php" />
         <option value="$PROJECT_DIR$/app/css/globalstyle.css" />
       </list>
     </option>
@@ -221,37 +223,50 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1038" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="GL2ProjetWebLocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2ProjetWebLocal" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GL2ProjetWebLocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2ProjetWebLocal" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GL2ProjetWebLocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GL2ProjetWebLocal" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GL2WebProject2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GL2WebProject2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,6 +292,122 @@
       <recent name="C:\xampp\htdocs\GL2WebProject" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/css/globalstyle.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/css/login.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/php/dataClass/ElementFacture.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/Singlerooms.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/consommation.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/login.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/css/modalForm.css</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -289,10 +420,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.slider.php">
     <configuration name="home.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/GL2WebProject/app/views/home.php" />
+    <configuration name="slider.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:3000/GL2WebProject2/app/views/slider.php" />
+    <list>
+      <item itemvalue="JavaScript Debug.home.php" />
+      <item itemvalue="JavaScript Debug.slider.php" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.slider.php" />
         <item itemvalue="JavaScript Debug.home.php" />
       </list>
     </recent_temporary>
@@ -337,6 +474,7 @@
       <workItem from="1525375937145" duration="3172000" />
       <workItem from="1525383517108" duration="498000" />
       <workItem from="1525534418828" duration="16877000" />
+      <workItem from="1525603642283" duration="2144000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1523698468503</created>
@@ -573,7 +711,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115890000" />
+    <option name="totallyTimeSpent" value="118120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,47 +723,47 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32792208" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290938" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.24281392" side_tool="true" weight="0.024752475" />
       <window_info anchor="bottom" id="Database Changes" order="14" sideWeight="0.49946696" weight="0.5217877" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75718606" visible="true" weight="0.28298888" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75718606" visible="true" weight="0.28246754" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4969743" weight="0.27027026" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2672035" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" weight="0.3295711" />
       <window_info anchor="right" id="Database" order="3" weight="0.08872651" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3974563" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="8" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32905483" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.75718606" weight="0.05251397" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" weight="0.3295711" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.271855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32792208" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="9" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32905483" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32960895" />
       <window_info anchor="right" id="Database" order="3" weight="0.08872651" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4969743" visible="true" weight="0.27150837" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39772728" />
@@ -633,7 +771,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.24281392" side_tool="true" weight="0.024752475" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4989339" weight="0.32960895" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -804,34 +942,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/php/controlClass/elementfacturetab.php" />
-    <entry file="file://$PROJECT_DIR$/app/views/FormulaireReservation.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/jquery.select-to-autocomplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/form_check_in.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/app/js/jquery.select-to-autocomplete.js" />
+    <entry file="file://$PROJECT_DIR$/app/js/form_check_in.js" />
     <entry file="file://$PROJECT_DIR$/app/js/table.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -839,40 +952,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/css.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29305" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/icon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/welcome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2431">
-          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/modalForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/font-awesome.css" />
+    <entry file="file://$PROJECT_DIR$/app/css/icon.css" />
+    <entry file="file://$PROJECT_DIR$/app/css/welcome.css" />
     <entry file="file://$PROJECT_DIR$/app/views/ajouteragent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -880,27 +962,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/foot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/slider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="50251" selection-start-line="4" selection-start-column="50251" selection-end-line="4" selection-end-column="50251" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,13 +976,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/homepage.css" />
     <entry file="file://$PROJECT_DIR$/OLD/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-714">
@@ -932,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="138" column="95" selection-start-line="138" selection-start-column="95" selection-end-line="138" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/footerstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -946,21 +998,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="34" column="62" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,13 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,35 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="228" column="30" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
-          <folding>
-            <element signature="n#__construct#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getInstance#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#addClientToBd#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#addClientToBdForReservation#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getAllClients#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#checkAdmin#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#checkAgentLogin#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#isClientInBd#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#checkAgent#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getAllEFTypes#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#createReservation#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#addClientToSejour#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getReservationsForClient#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#setReservationToFalse#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#updateClientInfo#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#deleteSejour#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getSejourFromRoom#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#generateFacture#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#unlinkSejourFromClient#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#removeDeadReservation#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getDeadReservation#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#addConsumptionToSejour#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#checkElementExistsInFacture#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#updateQuantiteElementFacture#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#resolveConsumption#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#addAgent#0;n#BDRequestManager#0;n#!!top" />
-            <element signature="n#getOccupiedRooms#0;n#BDRequestManager#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,10 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,10 +1089,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="138" column="95" selection-start-line="138" selection-start-column="95" selection-end-line="138" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/foot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/navbarstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/modalForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Singlerooms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="170" column="21" lean-forward="true" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/globalstyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        <state relative-caret-position="22">
+          <caret line="244" column="18" lean-forward="true" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
         </state>
       </provider>
     </entry>
