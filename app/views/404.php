@@ -6,16 +6,9 @@
 
     echo '<div style="background-color: #560014"><table  style="color: #ffffff">';
 
-    echo "<tr><td width='150px'>".'/'."<td>".'views/index.php'."</td></tr>";
     echo "<tr><td>".'<a href="http://localhost:3000/home">/home</a>'."<td>".'views/home.php'."</td></tr>";
     echo "<tr><td>".'<a href="http://localhost:3000/login">/login</a>'."<td>".'views/login.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/reservation">/reservation</a>'."<td>".'views/Reservation.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/singlerooms">/singlerooms</a>'."<td>".'views/Singlerooms.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/elfac">/elfac</a>'."<td>".'public/php/controlClass/elementfacturetab.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/checkin">/checkin</a>'."<td>".'views/CheckInForm.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/checkcin">/checkcin</a>'."<td>".'views/CheckCIN.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/consomation">/consomation</a>'."<td>".'views/consommation.php'."</td></tr>";
-    echo "<tr><td>".'<a href="http://localhost:3000/home">/home</a>'."<td>".'views/consommation.php'."</td></tr>";
-echo "<tr><td>" . '<a href="http://localhost:3000/ajouteragent">/ajouteragent</a>' . "<td>" . 'views/ajouteragent.php' . "</td></tr>";
-    echo '</table></div>';
+
+
+echo '</table></div>';
 
