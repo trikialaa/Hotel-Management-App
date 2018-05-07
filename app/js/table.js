@@ -38,7 +38,7 @@
                     }
                 }
 
-        */
+
         var btn3 = document.createElement('input');
 
         btn3.type = "button";
@@ -50,7 +50,7 @@
             btn3.parentElement.className = "vert";
             // body.classList.toggle("dialogexist");
             btn3.parentElement.removeChild(btn3);
-        };
+        };*/
 
         var cells = document.querySelectorAll("td");
 
