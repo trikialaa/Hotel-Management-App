@@ -14,7 +14,7 @@ include("navbar.php");
 <body>
 
 
-<form method="POST" action="app/php/controlClass/Ajout_Agent.php">
+<form method="post" action="app/php/controlClass/Ajout_Agent.php">
     <h2 class="heading">Ajouter Agent</h2>
 
     <div class="controls">
@@ -64,6 +64,6 @@ include("navbar.php");
 <?php
 include("foot.php");
 ?>
-<script src="app/php/controlClass/Ajout_Agent.php"></script>
+
 </body>
 </html>

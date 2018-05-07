@@ -47,6 +47,10 @@ include("navbar.php");
             <b>Numéro Téléphone client</b>
             <input type="tel" id="phone" class="floatLabel" name="phone" placeholder="Téléphone">
         </div>
+        <div class="controls">
+            <b>Email </b>
+            <input type="text" id="email" class="floatLabel" name="email" placeholder="Email" required>
+        </div>
 
     </div>
 

@@ -18,6 +18,8 @@ if ($reponse) {
     $_SESSION['logged_in'] = true;
     $_SESSION["Prenom"] = "admin";
 
+    $bdrm->cleanDataBase();
+
     header("Location: /home");
 } else { // on verifie si le login correspend à un agent
 
@@ -33,6 +35,7 @@ if ($reponse) {
 
 
             $_SESSION['logged_in'] = true;
+            $bdrm->cleanDataBase();
 
             header("Location: /home");
         }else{

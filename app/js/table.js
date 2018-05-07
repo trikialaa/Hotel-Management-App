@@ -1,47 +1,44 @@
         var body = document.querySelector("body");
 
 
+        /*
+
+                //MODAL WORKING FOR FIREFOX CHECKIN DIALAOGUE - CHANGED AFTER PROBLEM WITH DIALOG
+                var btn2 = document.createElement('input');
+
+                btn2.type = "button";
+                btn2.className = "btn";
+                btn2.value = "Check-in";
+
+                var dialogcheckin = document.getElementById("checkin_dialogue");
+
+                btn2.onclick = function () {
+                    dialogcheckin.style.display = "block";
+                    var chambreid = btn2.parentElement.innerText;
+                    console.log(chambreid);
+
+                    document.getElementById("chambreid").value = chambreid;
 
 
 
+                };
 
 
-        //MODAL WORKING FOR FIREFOX CHECKIN DIALAOGUE - CHANGED AFTER PROBLEM WITH DIALOG
-        var btn2 = document.createElement('input');
+                var span2 = document.getElementById("spanclose2");
 
-        btn2.type = "button";
-        btn2.className = "btn";
-        btn2.value = "Check-in";
+                span2.onclick = function() {
+                    dialogcheckin.style.display = "none";
+                }
 
-        var dialogcheckin = document.getElementById("checkin_dialogue");
+                window.onclick = function(event) {
+                    if (event.target == dialogcheckin) {
+                        dialogcheckin.style.display = "none";
+                        dialogres.style.display = "none";
 
-        btn2.onclick = function () {
-            dialogcheckin.style.display = "block";
-            var chambreid = btn2.parentElement.innerText;
-            console.log(chambreid);
+                    }
+                }
 
-            document.getElementById("chambreid").value = chambreid;
-
-
-
-        };
-
-
-        var span2 = document.getElementById("spanclose2");
-
-        span2.onclick = function() {
-            dialogcheckin.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == dialogcheckin) {
-                dialogcheckin.style.display = "none";
-                dialogres.style.display = "none";
-
-            }
-        }
-
-
+        */
         var btn3 = document.createElement('input');
 
         btn3.type = "button";

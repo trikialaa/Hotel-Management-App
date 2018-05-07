@@ -2,11 +2,9 @@
 
         $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
         switch ($request_uri[0]) {
+            case '/':
             case '/home':
                 require 'app/views/home.php';
-                break;
-            case '/debug':
-                require 'app/php/controlClass/BDRequestInterface.php';
                 break;
             case '/login':
                 require 'app/views/login.php';
@@ -14,21 +12,22 @@
             case '/reservation':
                 require 'app/views/Reservation.php';
                 break;
+            case '/confirmerReservation':
+                require 'app/views/confirmerReservation.php';
+                break;
             case '/facture':
                 require 'app/views/facture.php';
                 break;
-            case '/singlerooms':
-                require 'app/views/Singlerooms.php';
+            case '/roomstate':
+                require 'app/views/roomstate.php';
                 break;
-            case '/elfac':
-                require 'app/php/controlClass/elementfacturetab.php';
+            case '/CheckInResForm':
+                require 'app/views/CheckInResForm.php';
                 break;
-            case '/checkin':
-                require 'app/views/CheckInForm.php';
+            case '/CheckIn':
+                require 'app/views/CheckIn.php';
                 break;
-            case '/checkcin':
-                require 'app/views/CheckCIN.php';
-                break;
+
             case '/consomation':
                 require 'app/views/consommation.php';
                 break;
@@ -36,9 +35,6 @@
                 require 'app/views/ajouteragent.php';
                 break;
 
-            case '/test' :
-                require 'app/views/test.php';
-                break;
             default:
                 header('HTTP/1.0 404 Not Found');
                 require 'app/views/404.php';

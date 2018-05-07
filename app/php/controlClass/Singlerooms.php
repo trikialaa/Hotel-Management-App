@@ -2,18 +2,19 @@
     require 'BDRequestManager.php';
 
 
+$bdrm = BDRequestManager::getInstance();
 
     function getRooms(){
         $bdrm = BDRequestManager::getInstance();
         if (isset($_GET["refresh"]) && isset($_GET["date_in"]) && isset ($_GET["date_out"]) ) {
-            $rooms = $bdrm->getOccupiedRooms();
+            $roomsa = $bdrm->getOccupiedRooms();
         }
-        return $rooms;
+        return $roomsa;
     }
 
     if(isset($_POST['submitcheckin'])){
 
-        $bdrm = BDRequestManager::getInstance();
+        //$bdrm = BDRequestManager::getInstance();
         $nom = $_POST['nom'];
         $cin = $_POST['cin'];
         $datearr = $_POST['datearr'];

@@ -432,7 +432,7 @@
         }
 
         //done
-        //remove dead reservations
+        //remove dead reservations - NOT TO BE CALLED
         public function removeDeadReservation(){
             $today = date("Y-m-d");
             $sqlreq = "DELETE FROM sejour where `RESERVE` = ? and `CheckIn` < ? ";
@@ -454,8 +454,32 @@
 
         }
 
+        //NOT TO BE CALLED
+        public function unlinkDeadReservation($sejourid)
+        {
+
+            $sqlreq = "delete from sejourclient where `SEJOURID` = ?";
+
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array($sejourid));
+                    return true;
+                } else {
+                    return false;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return false;
+            }
+
+
+        }
+
         //done
-        //get dead reservations
+        //get dead reservations - NOT TO BE CALLED
         public function getDeadReservation(){
             $today = date("Y-m-d");
             $sqlreq = "SELECT * FROM `sejour` where `RESERVE` = ? and `CheckIn` < ? ";
@@ -476,6 +500,17 @@
                 return null;
             }
 
+        }
+
+        // used to remove outdated reservations - without removing the client infos just the reservation
+        public function cleanDataBase()
+        {
+            $deads = $this->getDeadReservation();
+            foreach ($deads as $dead) {
+                $this->unlinkDeadReservation($dead->SEJOURID);
+            }
+
+            $this->removeDeadReservation();
         }
 
         //done
@@ -585,7 +620,129 @@
         }
 
 
+        public function getTodayReservations()
+        {
+            $today = date("Y-m-d");
 
+            $sqlreq = "SELECT * FROM sejour se
+                                inner join sejourclient s on se.SEJOURID = s.SEJOURID
+                                inner join client c2 on s.CLIENTID = c2.CLIENTID
+                                where se.RESERVE = ? and se.CheckIn = ? ";
+
+            try {
+                if (isset(self::$_bdrm)) {
+
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array(1, $today));
+
+                    return $req->fetchAll(PDO::FETCH_OBJ);
+                } else {
+                    return null;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return null;
+            }
+
+        }
+
+        public function getSejour($sejour)
+        {
+
+            $sqlreq = "SELECT * FROM sejour where SEJOURID = ? ";
+
+            try {
+                if (isset(self::$_bdrm)) {
+
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array($sejour));
+
+                    return $req->fetch(PDO::FETCH_OBJ);
+                } else {
+                    return null;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return null;
+            }
+
+        }
+
+        public function getClient($client)
+        {
+
+            $sqlreq = "SELECT * FROM client where CLIENTID = ? ";
+
+            try {
+                if (isset(self::$_bdrm)) {
+
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array($client));
+
+                    return $req->fetch(PDO::FETCH_OBJ);
+                } else {
+                    return null;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return null;
+            }
+
+        }
+
+        public function getChambre($chambre)
+        {
+
+            $sqlreq = "SELECT * FROM chambre where CHAMBREID = ? ";
+
+            try {
+                if (isset(self::$_bdrm)) {
+
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array($chambre));
+
+                    return $req->fetch(PDO::FETCH_OBJ);
+                } else {
+                    return null;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return null;
+            }
+
+        }
+
+        public function getEmptyRoomsByType($type, $datein, $dateout)
+        {
+            $sqlreq = "SELECT * from chambre ch where TYPE = :typec and not exists 
+                                 (
+                                 SELECT * FROM chambre ch2 INNER JOIN SEJOUR SJ ON SJ.CHAMBREID = ch2.CHAMBREID
+                        where ((sj.CheckIn <=:minDate AND sj.CheckOut>= :minDate )
+                        or 	(sj.CheckIn<= :maxDate AND sj.CheckOut>= :maxDate) 
+                        or (sj.CheckIn>= :minDate AND sj.CheckOut<= :maxDate))
+                        and ch.CHAMBREID = ch2.CHAMBREID
+                                 )";
+
+            try {
+                $req = self::$_bdd->prepare($sqlreq);
+                $req->execute(array('minDate' => $datein,
+                    'maxDate' => $dateout,
+                    'typec' => $type));
+                return $req->fetchAll(PDO::FETCH_OBJ);
+            } catch (PDOException $e) {
+                die("Error" . $e->getMessage());
+
+            }
+
+        }
 
         /**
         FIX ELEMENT FACTURE TABLE + TREAMTMENT-

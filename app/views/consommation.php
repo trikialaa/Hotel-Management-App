@@ -15,6 +15,7 @@ if (isset($_GET['chambre']) && $_GET['quantite']) {
         $sejourid = $bdrm->getSejourFromRoom($_GET['chambre']);
         if ($sejourid > 0) {
             $bdrm->resolveConsumption($sejourid, $_GET['selectElement'], $_GET['quantite']);
+            header("Location: /home");
         } else {
             echo "ERROR";
         }
@@ -37,22 +38,24 @@ if (isset($_GET['chambre']) && $_GET['quantite']) {
 
 
     <div class="controls">
+        <b>Numéro chambre </b>
         <input type="text" id="chambre" class="floatLabel" name="chambre">
-        <label for="chambre">Numéro chambre </label>
+
     </div>
 
 
     <div class="controls">
+        <b>Element</b>
         <?php ElementFacture::printSelect($listConsumable) ?>
-
 
     </div>
 
 
     <div class="controls">
         <div class="controls">
+            <b>Quantité</b>
             <input type="text" id="quantite" class="floatLabel" name="quantite">
-            <label for="quantite">Quantité</label>
+
         </div>
 
         <br>

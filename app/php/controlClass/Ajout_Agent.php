@@ -8,9 +8,8 @@ if (isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['adresse']) 
 
     $rslt = $bdrm->addAgent($_POST['prenom'], $_POST['nom'], $_POST['adresse'], $_POST['tel'], $_POST['login'], $_POST['mdp']);
     if ($rslt != -1) {
-        echo "ajouté avec succès ";
-        header("Location: localhost:3000/home");
+        header("Location: /home");
     } else {
-        echo "Agent non ajouté";
+        header("Location: /ajouteragent");
     }
 }
