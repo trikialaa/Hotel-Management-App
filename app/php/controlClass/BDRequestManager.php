@@ -454,11 +454,34 @@
 
         }
 
-        //NOT TO BE CALLED
-        public function unlinkDeadReservation($sejourid)
+
+        public function unlinkDeadSejour($sejourid)
         {
 
             $sqlreq = "delete from sejourclient where `SEJOURID` = ?";
+
+            try {
+                if (isset(self::$_bdrm)) {
+                    $req = self::$_bdd->prepare($sqlreq);
+                    $req->execute(array($sejourid));
+                    return true;
+                } else {
+                    return false;
+                }
+            } catch (PDOException $e) {
+                print "Erreur : " . $e->getMessage();
+                die();
+
+                return false;
+            }
+
+
+        }
+
+        public function cleanFacture($sejourid)
+        {
+
+            $sqlreq = "delete from facturecomplete where `SEJOURID` = ?";
 
             try {
                 if (isset(self::$_bdrm)) {
@@ -507,7 +530,7 @@
         {
             $deads = $this->getDeadReservation();
             foreach ($deads as $dead) {
-                $this->unlinkDeadReservation($dead->SEJOURID);
+                $this->unlinkDeadSejour($dead->SEJOURID);
             }
 
             $this->removeDeadReservation();

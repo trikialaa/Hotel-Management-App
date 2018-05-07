@@ -27,6 +27,9 @@
             case '/CheckIn':
                 require 'app/views/CheckIn.php';
                 break;
+            case '/CheckOut':
+                require 'app/views/CheckOut.php';
+                break;
 
             case '/consomation':
                 require 'app/views/consommation.php';

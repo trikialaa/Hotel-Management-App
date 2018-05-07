@@ -7,6 +7,7 @@
     <a class="link" href="http://localhost:3000/reservation">Réservation</a>
     <a class="link" href="http://localhost:3000/confirmerReservation">Confirmer Reservation</a>
     <a class="link" href="http://localhost:3000/roomstate">Etat Des Chambres</a>
+    <a class="link" href="http://localhost:3000/CheckOut">Check Out</a>
     <a class="link" href="http://localhost:3000/consomation">Consommation</a>
     <a class="link" href="http://localhost:3000/facture">Factures</a>
     <?php
