@@ -12,7 +12,7 @@ include("navbar.php");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>single rooms</title>
+    <title>Etat de Chambres</title>
     <link rel="stylesheet" href="app/css/globalstyle.css">
     <?php if (isset($_GET['selectstate'])) {
         if (!strcmp($_GET['selectstate'], 'ALL')) {
