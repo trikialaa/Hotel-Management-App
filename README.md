@@ -1,5 +1,15 @@
 README - HOW To USE AND CONFIGURE THE PROJECT :
 
+	This website provide these functionalities :
+		- Make a reservation 
+		- list reservations that their checkin is of the date of the day your running your app
+		- make checkin by listing empty rooms in the roomstate tab
+		- get the status of rooms in certain date 
+		- list the bought item by room number
+		- make checkout
+		- add agent infos by admin
+		- add elements consumed by client using his room numbers
+
 	1.EXECUTE THIS SQL INSTRUCTION ON ¨PHPMYADMIN":	
 
 CREATE DATABASE BDHOTEL;
